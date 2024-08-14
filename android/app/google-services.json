@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "456832429008",
+    "project_id": "next-level-gaming-8f5b8",
+    "storage_bucket": "next-level-gaming-8f5b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456832429008:android:77944c474b28fe988127d5",
+        "android_client_info": {
+          "package_name": "com.nlg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIqMe3oSgyFD5mLXQUwEfsv9Pgz4fJWu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
