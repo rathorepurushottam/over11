@@ -1,6 +1,6 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
-import {AppText, ELEVEN, FOURTEEN, POPPINS, POPPINS_MEDIUM, POPPINS_SEMI_BOLD} from '../AppText';
+import {AppText, ELEVEN, FOURTEEN, POPPINS, POPPINS_MEDIUM, POPPINS_SEMI_BOLD, TWENTY_FOUR, TWENTY_TWO} from '../AppText';
 import {Button} from '../Button';
 import {useSelector} from 'react-redux';
 import NavigationService from '../../navigation/NavigationService';
@@ -21,7 +21,7 @@ const ListingItem = ({title, info, button, border}) => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           borderBottomWidth: !border ? 1 : null,
-          borderBottomColor: NLCColor.background,
+          borderBottomColor: colors.redText,
           paddingHorizontal: 10,
           paddingVertical: 16,
           // backgroundColor: 'red',
@@ -31,7 +31,7 @@ const ListingItem = ({title, info, button, border}) => {
         <AppText type={FOURTEEN} weight={POPPINS_MEDIUM}>
           {title}
         </AppText>
-        <AppText type={FOURTEEN} weight={POPPINS_SEMI_BOLD}>
+        <AppText type={TWENTY_TWO} weight={POPPINS_SEMI_BOLD}>
           {info}
         </AppText>
       </View>
@@ -59,14 +59,14 @@ const ListingItem = ({title, info, button, border}) => {
           <Button
             onPress={() => NavigationService.navigate(WITHDRAW_SCREEN)}
             style={{
-              width: 145,
-              height: 30,
-              marginTop: 0,
+              width: 150,
+              height: 35,
+              marginTop: 10,
             }}
-            nogradient
+            // nogradient
             backgroundColor="white"
             type={ELEVEN}
-            weight={POPPINS}>
+            weight={POPPINS_SEMI_BOLD}>
             WithDrawl
           </Button>
         )}

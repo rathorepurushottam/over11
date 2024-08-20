@@ -7,7 +7,7 @@ import Football from './Football';
 import Cricket from './Cricket';
 import Kabbadi from './Kabbadi';
 import NavigationService from '../../navigation/NavigationService';
-import { _createwallet, getUserWallet } from '../../actions/profileAction';
+import { _createwallet, getBannerList, getUserWallet } from '../../actions/profileAction';
 import { KeyBoardAware } from '../../common/KeyboardAware';
 import { HomeTopHeader } from '../../common/HomeTopHeader';
 import { BannerLoop } from '../../helper/image';
@@ -25,6 +25,8 @@ const Home = () => {
   };
   useEffect(() => {
     dispatch(getUserWallet());
+    dispatch(getBannerList());
+    
     // requestLocationPermission();
 
   }, []);

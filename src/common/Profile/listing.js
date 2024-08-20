@@ -16,6 +16,9 @@ const Listing = ({Icon, Name, next, lastName, onPress, onPressMain}) => {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        borderWidth: 1,
+        borderColor: colors.redText,
+        borderRadius: 5
       }}>
       <View
         style={{
@@ -26,7 +29,7 @@ const Listing = ({Icon, Name, next, lastName, onPress, onPressMain}) => {
           <FastImage
             source={Icon}
             resizeMode="contain"
-            tintColor={colors.black}
+            tintColor={colors.redText}
             style={[
               {width: 24, height: 24, resizeMode: 'contain'},
               !next && {width: 20, height: 20},
@@ -55,8 +58,8 @@ const Listing = ({Icon, Name, next, lastName, onPress, onPressMain}) => {
             <FastImage
               source={right_arrow}
               resizeMode="contain"
-              style={{width: 6, height: 12, marginRight: 10}}
-              tintColor={colors.white}
+              style={{width: 18, height: 15, marginRight: 10}}
+              tintColor={colors.redText}
             />
           </TouchableOpacityView>
         )}

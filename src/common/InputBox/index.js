@@ -6,7 +6,7 @@ import { RootState } from '../../libs/rootReducer';
 import { AppText, FORTEEN, LIGHTWHITE, POPPINS_MEDIUM } from '../AppText';
 import LinearGradient from 'react-native-linear-gradient';
 import FastImage from 'react-native-fast-image';
-import { Nlglogo, callIcon, cross, eye_close, eye_open } from '../../helper/image';
+import { Over11logo, callIcon, cross, eye_close, eye_open } from '../../helper/image';
 import { TouchableOpacityView } from '../TouchableOpacityView';
 import { NLCColor, colors } from '../../theme/color';
 

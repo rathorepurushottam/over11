@@ -9,7 +9,7 @@ const CommonContainer = ({children, style}) => {
         {
           paddingHorizontal: 2,
           // borderWidth: 2,
-          borderRadius: 16,
+          // borderRadius: 16,
           // borderColor: colors.borderLightBlue,
         },
         style,

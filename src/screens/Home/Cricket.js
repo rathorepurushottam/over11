@@ -16,6 +16,7 @@ import {
   POPPINS_EXTRA_BOLD_ITALIC,
   POPPINS_MEDIUM,
   POPPINS_SEMI_BOLD,
+  SIXTEEN,
   WHITE,
 } from '../../common/AppText';
 import MatchCard from '../../components/matchCard/MatchCard';
@@ -27,6 +28,7 @@ import { universalPaddingHorizontal } from '../../theme/dimens';
 import { setMyMatchesHome, setUpComingMatches } from '../../slices/matchSlice';
 import { KeyBoardAware } from '../../common/KeyboardAware';
 import { BaseUrl } from '../../helper/utility';
+import HomeSlider from './HomeSilder';
 const search = element => getDate(element).hour < 0;
 const Cricket = ({ random, setRefreshingTwo }) => {
   const dispatch = useDispatch();
@@ -139,10 +141,11 @@ const Cricket = ({ random, setRefreshingTwo }) => {
   }, [_id, userData]);
   return (
     <View style={styles.container}>
+      <HomeSlider />
       {myMatchesHome?.length !== 0 && (
         <View>
           <View style={styles.one}>
-            <AppText type={EIGHTEEN} weight={POPPINS_BOLD} color={BLACK}>
+            <AppText type={SIXTEEN} weight={POPPINS_SEMI_BOLD} color={BLACK}>
               My Matches
             </AppText>
             <ViewAll
@@ -170,13 +173,14 @@ const Cricket = ({ random, setRefreshingTwo }) => {
           </View>
         </View>
       )}
+      <View style={{borderWidth: StyleSheet.hairlineWidth, borderColor: "black", marginVertical: 15}}></View>
       <AppText
         style={{
           marginTop: myMatchesHome?.length !== 0 ? 5 : 20,
           marginHorizontal: universalPaddingHorizontal,
         }}
-        type={EIGHTEEN}
-        weight={POPPINS_BOLD} color={BLACK}>
+        type={SIXTEEN}
+        weight={POPPINS_SEMI_BOLD} color={BLACK}>
         Upcoming Matches
       </AppText>
       <KeyBoardAware

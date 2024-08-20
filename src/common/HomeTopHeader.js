@@ -7,7 +7,8 @@ import {
 } from '../navigation/routes';
 import {
   MyBattleLogo,
-  Nlgicon,
+  Over11HeaderLogo,
+  Over11icon,
   ThreeIcon,
   UserIcon,
   WalletIcon,
@@ -68,7 +69,7 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
           </View>
         </TouchableOpacityView>
         <FastImage
-          source={Nlgicon}
+          source={Over11HeaderLogo}
           style={styles.combineIcon}
           resizeMode="contain"
         />
@@ -123,7 +124,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     flexDirection: "row",
     alignItems: "center",
-    justifyContent:"space-between"
+    justifyContent:"space-between",
+    paddingTop: 10
   },
   personImage: {
     height: 28,
@@ -131,8 +133,8 @@ const styles = StyleSheet.create({
     borderRadius: 100,
   },
   combineIcon: {
-    height: 28,
-    width: 53,
+    height: 30,
+    width: 100,
     marginLeft: 85,
     marginTop: "8%"
   },

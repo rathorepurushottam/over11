@@ -42,6 +42,7 @@ import PrimaryButton from '../common/primaryButton';
 import { BOTTOM_TAB_HOMESCREEN } from '../navigation/routes';
 import { fixedToTwo } from '../helper/utility';
 import SlideSwiper from '../common/SlideSwiper';
+import ProfileHeader from '../common/ProfileHeader';
 
 export const ListEmptyComponent = ({ title, activeTab }) => {
   return (
@@ -195,7 +196,7 @@ const MyTransaction = () => {
         networkActivityIndicatorVisible={true}
       />
       <CommonImageBackground common>
-        <Header
+        <ProfileHeader
           commonHeader
           title="Transaction"
           style={{ padding: universalPaddingHorizontal, }}

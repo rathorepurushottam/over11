@@ -8,9 +8,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 16,
-    borderWidth:2,
-    borderColor:NLCColor.Red
+    // borderRadius: 16,
+    // borderWidth:2,
+    // borderColor:NLCColor.Red
   },
   rightArrow: {
     height: 10,

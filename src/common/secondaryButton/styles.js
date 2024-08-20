@@ -13,14 +13,14 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     height: 45,
-    borderRadius: 10,
+    borderRadius: 5,
     alignItems: 'center',
     justifyContent: 'center',
-    
+    backgroundColor: colors.redText,
   },
 
   buttonText: {
-    color: NLCColor.Red,
+    // color: NLCColor.Red,
   },
   touchableopacityview: colors => ({
     backgroundColor: colors.purple,

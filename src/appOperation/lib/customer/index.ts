@@ -7,6 +7,7 @@ export default (appOperation: AppOperation) => ({
         appOperation.get(`user/profile`, undefined, undefined, CUSTOMER_TYPE),
     get_wallet: () =>
         appOperation.get(`wallet/user-wallet`, undefined, undefined, CUSTOMER_TYPE),
+    getBannerList: () => appOperation.get(`ViewBanner`, undefined, undefined, CUSTOMER_TYPE),
     walletcreate: (id: any) =>
         appOperation.post(`wallet/create-wallet?user=${id}`, {}, CUSTOMER_TYPE),
     getKycDetails: () =>

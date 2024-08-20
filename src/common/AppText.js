@@ -294,6 +294,9 @@ const getTextStyle = (
     case BUTTONCOLOR:
       style['color'] = NLCColor.buttonColor;
       break;
+      case REDTEXT:
+        style['color'] = colors.redText;
+        break;
     // case SIXTH:
     //   style['color'] = colors.sixth;
     //   break;

@@ -18,6 +18,7 @@ import {
   setTransactionsWithdrawals,
   setUserData,
   setUserWalletData,
+  setBannerList,
 } from '../slices/profileSlice';
 import {setCreateWallet} from '../slices/matchSlice';
 
@@ -54,6 +55,20 @@ export const createWalletAPI = id => async (dispatch: Dispatch<any>) => {
     }
   } catch (error) {
     logError(error);
+  } finally {
+    dispatch(setLoading(false));
+  }
+};
+
+export const getBannerList = () => async dispatch => {
+  try {
+    dispatch(setLoading(true));
+    const response = await appOperation.customer.getBannerList();
+    if (response?.success) {
+      dispatch(setBannerList(response?.data));
+    }
+  } catch (e) {
+    logError(e);
   } finally {
     dispatch(setLoading(false));
   }

@@ -10,6 +10,7 @@ import {
   SIXTEEN,
   POPPINS_BOLD,
   BLACK,
+  REDTEXT,
 } from './AppText';
 import {TouchableOpacityView} from './TouchableOpacityView';
 import {useSelector} from 'react-redux';
@@ -32,12 +33,7 @@ const Button = ({
   return (
     <>
       {!nogradient ? (
-        <LinearGradient
-          start={{x: 0, y: 0}}
-          end={{x: 1, y: 0}}
-          locations={[-0.01, 0.9999]}
-          colors={['#1F7596', '#10536D']}
-          style={[styles.buttonStyle, style]}>
+        <View style={[styles.buttonStyle, style]}>
           <TouchableOpacityView
             onPress={onPress}
             style={{
@@ -48,13 +44,14 @@ const Button = ({
               height: '100%',
             }}>
             <AppText
-              style={[styles.color(colors)]}
+              // style={[styles.color(colors)]}
+              color={REDTEXT}
               type={type ? type : FORTEEN}
               weight={weight ? weight : POPPINS_BOLD}>
               {children}
             </AppText>
           </TouchableOpacityView>
-        </LinearGradient>
+        </View>
       ) : (
         <LinearGradient
           start={{x: 0, y: 0}}
@@ -76,7 +73,7 @@ const Button = ({
               },
             ]}>
             <AppText
-              color={color ? color : BLACK}
+              color={color ? color :  REDTEXT}
               type={type ? type : FORTEEN}
               weight={weight ? weight : POPPINS_BOLD}>
               {children}
@@ -95,11 +92,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
-    height: 40,
+    height: 45,
     borderRadius: 4,
     margin: 5,
     padding: 1,
     width: 100,
+    borderColor: colors.redText,
+    borderWidth: 1
   },
   color: colors => ({
     color: colors.white,

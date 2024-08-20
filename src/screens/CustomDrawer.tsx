@@ -14,7 +14,7 @@ import {
   FairIcon,
   LegalIcon,
   MyBattleProfileBox,
-  Nlgprofilebox,
+  Over11profilebox,
   PlayIcon,
   PointsIcon,
   PrivacyIcon,
@@ -188,7 +188,7 @@ const CustomDrawer = () => {
         networkActivityIndicatorVisible={true}
       />
       <ImageBackground
-        source={Nlgprofilebox}
+        source={Over11profilebox}
         resizeMode="cover"
         // tintColor={NLCColor.Red}
         style={styles.MyBattleProfileBox}>

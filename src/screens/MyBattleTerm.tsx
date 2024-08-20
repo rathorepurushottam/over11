@@ -25,7 +25,7 @@ const MyBattleTerm = () => {
         />
         <KeyBoardAware>
           <WebView
-            source={{uri: 'https://nlgfantasy.com/termsNConditionsmobile'}}
+            source={{uri: 'https://Over11fantasy.com/termsNConditionsmobile'}}
           />
         </KeyBoardAware>
       </CommonImageBackground>

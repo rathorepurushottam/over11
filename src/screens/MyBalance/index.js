@@ -30,6 +30,8 @@ import {getKycDetails, getUserProfile} from '../../actions/profileAction';
 import {fixedToTwo} from '../../helper/utility';
 import CommonImageBackground from '../../common/commonImageBackground';
 import {NLCColor, colors} from '../../theme/color';
+import ProfileHeader from '../../common/ProfileHeader';
+import SecondaryButton from '../../common/secondaryButton';
 
 const MyBalance = () => {
   const dispatch = useDispatch();
@@ -64,14 +66,18 @@ const MyBalance = () => {
         networkActivityIndicatorVisible={true}
       />
       <CommonImageBackground common>
-        <Header title="My Balance" commonHeader />
-        <View style={{paddingHorizontal: 20}}>
+        <ProfileHeader title="My Balance" commonHeader />
+        <View style={{marginHorizontal: 20,borderWidth: 1,
+              borderColor: colors.redText,
+              height: "20%"}}>
           <View
             style={{
-              flexDirection: 'row',
+              flexDirection: 'column',
               justifyContent: 'space-between',
-              alignItems: 'center',
-              marginTop: 30,
+              // alignItems: 'center',
+              marginTop: 20,
+              paddingLeft: 20
+              
             }}>
             <View>
               <AppText type={FORTEEN} weight={POPPINS_LIGHT}>
@@ -82,7 +88,7 @@ const MyBalance = () => {
               </AppText>
             </View>
             <View>
-              <PrimaryButton
+              <SecondaryButton
                 onPress={() => onSubmit()}
                 title="ADD CASH"
                 buttonStyle={styles.button}
@@ -94,19 +100,17 @@ const MyBalance = () => {
         </View>
 
         <View style={{paddingHorizontal: 20, flex: 1}}>
-          <View
-            style={{
-              marginTop: 30,
-            }}>
+          <View>
             <CommonContainer
               style={{
                 width: '100%',
-                height: 215,
+                height: 274,
                 marginTop: 15,
+                borderRadius: 5,
                 paddingHorizontal: 0,
-                backgroundColor: NLCColor.background,
+                backgroundColor: colors.white,
                 borderWidth: 1,
-                borderColor: NLCColor.background,
+                borderColor: colors.redText,
               }}>
               <ListingItem
                 title={'Cash Deposit'}
@@ -131,7 +135,7 @@ const MyBalance = () => {
               alignItems: 'center',
               justifyContent: 'center',
               marginTop: 20,
-              backgroundColor: NLCColor.background,
+              backgroundColor: colors.white,
             }}>
             <Listing
               onPressMain={() => NavigationService.navigate(TRANSACTION_SCREEN)}
@@ -148,6 +152,7 @@ const MyBalance = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 marginTop: 10,
+                backgroundColor: colors.white,
               }}>
               <Listing
                 onPressMain={() => NavigationService.navigate(KYC_SCREEN)}
@@ -181,7 +186,7 @@ const MyBalance = () => {
               alignItems: 'center',
               justifyContent: 'center',
               marginTop: 10,
-              backgroundColor: NLCColor.background,
+              backgroundColor: colors.white,
             }}>
             <Listing
               onPressMain={() => NavigationService.navigate(TDS_REPORT)}
@@ -237,7 +242,10 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '700',
   },
-  button: {},
+  button: {
+    marginTop: 20,
+    width: "45%"
+  },
   smallBtn: {
     width: 97,
     height: 37,

@@ -1,8 +1,8 @@
 export const USER_TOKEN_KEY = 'USER_TOKEN_KEY';
 export const FCM_TOKEN_KEY = 'FCM_TOKEN_KEY';
-export const BASE_URL = 'https://api.kexchange.co/';
-export const BASE_URLTWO = 'wss://api.kxchange.co.in/';
-export const BASE_URL_IP = 'http://65.1.155.112:3002/';
+export const BASE_URL = 'http://api.over11.in/';
+export const BASE_URLTWO = 'wss://api.over11.in/';
+// export const BASE_URL_IP = 'http://65.1.155.112:3002/';
 export const placeHolderText = {
   userName: 'Phone Number',
   password: 'Enter Your Password',

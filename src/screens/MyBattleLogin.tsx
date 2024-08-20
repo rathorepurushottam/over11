@@ -13,7 +13,7 @@ import {
   AgeIcon,
   MyBattleIcon,
   MyBattleScreen,
-  Nlglogo,
+  Over11logo,
   Referboxicon,
   callIcon,
 } from '../helper/image';
@@ -40,6 +40,7 @@ import {TouchableOpacityView} from '../common/TouchableOpacityView';
 import Checkbox from '../common/CheckBox/CheckBox';
 import NavigationService from '../navigation/NavigationService';
 import { MYBATTLEPOLICY, MYBATTLETERM } from '../navigation/routes';
+import { Over11icon } from '../helper/image';
 
 const MyBattleLogin = () => {
   const dispatch = useDispatch();
@@ -68,7 +69,7 @@ const MyBattleLogin = () => {
   return (
     <AppSafeAreaView
       statusColor={true}
-      style={{backgroundColor: NewColor.linerWhitefifty}}
+      // style={{backgroundColor: NewColor.linerWhitefifty}}
       hidden={false}>
       <StatusBar
         barStyle={'dark-content'}
@@ -80,7 +81,11 @@ const MyBattleLogin = () => {
         source={MyBattleScreen}
         resizeMode="cover"
         style={styles.MyBattleScreen}> */}
-      <FastImage resizeMode="stretch" style={styles.logo} source={Nlglogo} />
+        
+      {/* <FastImage resizeMode="stretch" style={styles.logo} source={Over11logo} /> */}
+      <View style={styles.logo}>
+        <FastImage source={Over11icon} resizeMode='contain' style={{width: "60%", height: '70%', marginTop: 20}}/>
+      </View>
       <View
         style={{
           paddingHorizontal: universalPaddingHorizontal,
@@ -157,7 +162,7 @@ const MyBattleLogin = () => {
             style={styles.AgeIcon}
           />
           <AppText type={ELEVEN} style={{marginLeft: 10}}>
-            I have read and agree to NLG Fantasy{' '}
+            I have read and agree to Over11 Fantasy{' '}
             <AppText style={{textDecorationLine: 'underline'}}>
               Terms of Service
             </AppText>
@@ -175,7 +180,7 @@ const MyBattleLogin = () => {
             style={styles.AgeIcon}
           />
           <AppText type={ELEVEN} style={{marginLeft: 10}}>
-            I have read and agree to NLG Fantasy{' '}
+            I have read and agree to Over11 Fantasy{' '}
             <AppText type={ELEVEN} onPress={()=>{
               NavigationService.navigate(MYBATTLETERM)
             }} style={{textDecorationLine: 'underline'}}>
@@ -208,6 +213,7 @@ const styles = StyleSheet.create({
   },
   label: {
     marginBottom: 10,
+    alignSelf :"center"
   },
   textInputBox: {
     fontFamily: fontFamilyPoppins,
@@ -245,5 +251,8 @@ const styles = StyleSheet.create({
   logo: {
     width: '100%',
     height: 278,
+    justifyContent: "center",
+    alignItems: "center"
+
   },
 });

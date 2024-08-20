@@ -1,13 +1,20 @@
 import {StyleSheet} from 'react-native';
 import React from 'react';
 import {Primary} from '../../theme/dimens';
+import { colors } from '../../theme/color';
 
 const styles = StyleSheet.create({
   linearGradient: {
-    borderRadius: 10,
-    height: 45,
-    alignItems: 'center',
-    justifyContent: 'center',
+    height: 50,
+    justifyContent :"flex-end",
+      borderColor: "#A91515",
+          borderRightWidth: 2,
+          borderRightColor: "#A91515",
+          borderBottomColor: "#A91515",
+          borderBottomWidth: 2,
+          borderBottomRightRadius: 4,
+          borderBottomLeftRadius: 4,
+          borderTopRightRadius: 4,
   },
   linearGradientWrapper: {
     borderRadius: 5,
@@ -22,10 +29,8 @@ const styles = StyleSheet.create({
     marginTop: 15,
   },
   buttonText:{
-    color:'white',
     fontWeight:"700",
-    textTransform:"uppercase"
-
+    textTransform:"uppercase",
   },
 });
 

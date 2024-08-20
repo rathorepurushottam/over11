@@ -40,7 +40,7 @@ import { colors } from '../../../theme/color';
 import { modifyName, shareToAny } from '../../../helper/utility';
 
 export const shareTeamMessage = (userName, s1, s2, series, id) => {
-  let temp = `Pick NLG Fantasy Infinity team with just one tap!\n\n${userName}'s team for ${s1} VS ${s2} | ${series}\n Sport:Cricket\nhttps://www.battleinfinity.io/${id}`;
+  let temp = `Pick Over11 Fantasy Infinity team with just one tap!\n\n${userName}'s team for ${s1} VS ${s2} | ${series}\n Sport:Cricket\nhttps://www.battleinfinity.io/${id}`;
   return temp;
 };
 

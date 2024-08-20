@@ -17,23 +17,21 @@ const Checkbox = ({ onPress, value, disabled, type }: any) => {
       onPress={onPress}
       underlayColor="transparent"
       disabled={disabled}
-      style={{}}>
-      <LinearGradient colors={[NLCColor.LightRed, NLCColor.shadeRed]} style={styles.linearGradientWrapper}
-        start={{ x: 1, y: 0 }}
-        end={{ x: 0, y: 1 }}>
+      style={{borderWidth: 1, borderColor: "black", borderRadius: 3}}>
+      <View>
         {value ? (
           <View style={[styles.selectedUIFilter(type, colors)]}>
             <FastImage
               source={tick}
               resizeMode={'contain'}
-              tintColor={colors.white}
+              tintColor={colors.black}
               style={[styles.checkboxTick(type, colors)]}
             />
           </View>
         ) : (
           <View style={styles.unchecked(colors)} />
         )}
-      </LinearGradient>
+      </View>
     </TouchableOpacityView>
   );
 };

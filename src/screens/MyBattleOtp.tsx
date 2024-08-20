@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {ImageBackground, StyleSheet, View} from 'react-native';
 import {AppSafeAreaView} from '../common/AppSafeAreaView';
 import {KeyBoardAware} from '../common/KeyboardAware';
-import {MyBattleIcon, MyBattleScreen, Nlglogo} from '../helper/image';
+import {MyBattleIcon, MyBattleScreen, Over11icon, Over11logo} from '../helper/image';
 import {StatusBar} from 'native-base';
 import {NLCColor, NewColor, colors} from '../theme/color';
 import {Logo, universalPaddingHorizontal} from '../theme/dimens';
@@ -78,8 +78,8 @@ const MyBattleOtp = ({route}: any) => {
         translucent={true}
         networkActivityIndicatorVisible={true}
       />
-      <View>
-        <FastImage source={Nlglogo} resizeMode="stretch" style={styles.logo} />
+     <View style={styles.logo}>
+        <FastImage source={Over11icon} resizeMode='contain' style={{width: "60%", height: '70%', marginTop: 20}}/>
       </View>
       <View style={styles.main}>
         <View
@@ -183,8 +183,11 @@ const styles = StyleSheet.create({
   logo: {
     width: '100%',
     height: 278,
+    justifyContent: "center",
+    alignItems: "center"
   },
   button: {
     marginTop: 40,
+
   },
 });

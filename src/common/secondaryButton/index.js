@@ -16,7 +16,7 @@ const SecondaryButton = ({
   smallBtn,
   titleStyle,
   buttonViewStyle,
-  WHITE,
+  color,
 }: any) => {
 
   return (
@@ -24,21 +24,15 @@ const SecondaryButton = ({
       style={buttonStyle}
       activeOpacity={1}
       onPress={onPress}>
-        <LinearGradient colors={[
-          colors.white,
-          colors.white
-        ]}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1.0, y: 0 }}
-          style={[styles.buttonContainer, buttonViewStyle]}>
+        <View style={[styles.buttonContainer, buttonViewStyle]}>
           <AppText
-            color={WHITE ? WHITE : RED}
+            color={color ? color : WHITE}
             type={FIFTEEN}
             weight={POPPINS_BOLD}
             style={[styles.buttonText, titleStyle]}>
             {title}
           </AppText>
-        </LinearGradient >
+        </View >
     </TouchableOpacityView >
   );
 };

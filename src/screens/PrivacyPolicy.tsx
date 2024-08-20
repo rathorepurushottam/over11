@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
         />
         <KeyBoardAware>
             <WebView
-                source={{ uri: 'https://nlgfantasy.com/policymobile' }}
+                source={{ uri: 'https://Over11fantasy.com/policymobile' }}
             />
         </KeyBoardAware>
     </CommonImageBackground>

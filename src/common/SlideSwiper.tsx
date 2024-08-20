@@ -19,7 +19,8 @@ import {
   SEMI_BOLD,
   TWELVE,
   WHITE,
-  AppText, SIXTEEN
+  AppText, SIXTEEN,
+  REDTEXT
 } from '../common/AppText';
 import { fixedToTwo } from '../helper/utility';
 import moment from 'moment';
@@ -41,7 +42,7 @@ export const RenderTabBar = (props: any) => {
               padding: 5,
               alignItems: 'center',
             }}>
-            <AppText type={FORTEEN} color={focused ? RED : BLACK} weight={POPPINS_MEDIUM}>
+            <AppText type={FORTEEN} color={focused ? REDTEXT : BLACK} weight={POPPINS_MEDIUM}>
               {route.title}
             </AppText>
             {focused ? 

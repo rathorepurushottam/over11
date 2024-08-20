@@ -36,10 +36,10 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <Provider store={store}>
-        <RootComponent>
+        {/* <RootComponent> */}
           <Navigator />
           {/* <Toast ref={toastRef} /> */}
-        </RootComponent>
+        {/* </RootComponent> */}
         {/* <PushController/> */}
       </Provider>
     </SafeAreaProvider>

@@ -80,8 +80,8 @@ export const fixedToTwo = (value: number) => {
   let temp = value?.toFixed(2);
   return temp;
 };
-export const BaseUrl = 'http://103.175.163.162:4009/'
-export const IMAGE_BASE_URL = 'http://103.175.163.162:4009/';
+export const BaseUrl = 'http://api.over11.in/'
+export const IMAGE_BASE_URL = 'http://api.over11.in/';
 
 export const toastAlert = {
   showToastSuccess: (message: any, duration = 2500) => { },
@@ -89,7 +89,7 @@ export const toastAlert = {
     Platform.OS == 'ios' ?
       Toast.show({
         type: 'success',
-        text1: 'NLG Fantasy',
+        text1: 'Over11 Fantasy',
         text2: `${message}`,
         text2Style: { fontSize: 12, fontFamily: poppinsBold },
         text1Style: { fontFamily: poppinsBold },
@@ -100,7 +100,7 @@ export const toastAlert = {
 export const iosToast = (message: any) => {
   Toast.show({
     type: 'success',
-    text1: 'NLG Fantasy',
+    text1: 'Over11 Fantasy',
     text2: `${message}`
   })
 }

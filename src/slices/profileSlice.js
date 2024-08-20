@@ -9,7 +9,8 @@ export const initialState = {
   contestTransactions: [],
   withdrawalsTransactions: [],
   walletCreateData: undefined,
-  SaveActivite: undefined
+  SaveActivite: undefined,
+  bannerList: [],
 };
 export const profileSlice = createSlice({
   name: 'profile',
@@ -42,6 +43,9 @@ export const profileSlice = createSlice({
     setActivite: (state, { payload }) => {
       state.SaveActivite = payload;
     },
+    setBannerList: (state, { payload }) => {
+      state.bannerList = payload;
+    }
   },
 });
 
@@ -54,6 +58,7 @@ export const {
   setKycDetails,
   setActivite,
   setWalletCreate,
+  setBannerList
 } = profileSlice.actions;
 
 export default profileSlice.reducer;

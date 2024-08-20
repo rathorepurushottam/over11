@@ -46,6 +46,7 @@ export const colors = {
   lightWhite: '#00000033',
   textColor: '#8E8E8E',
   buttoncolor: '#3EAA35',
+  redText: '#A91515'
 
 };
 export const NewColor = {

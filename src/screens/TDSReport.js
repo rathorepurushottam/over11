@@ -9,6 +9,7 @@ import { AppText, BLACK, LATO_MEDIUM, LATO_SEMI_BOLD, POPPINS_SEMI_BOLD, SEMI_BO
 import { universalPaddingHorizontal } from "../theme/dimens";
 import { color } from "native-base/lib/typescript/theme/styled-system";
 import { colors } from "../theme/color";
+import ProfileHeader from "../common/ProfileHeader";
 
 const TDSReport = () => {
     const data = [
@@ -69,7 +70,7 @@ const TDSReport = () => {
                 networkActivityIndicatorVisible={true}
             />
             <CommonImageBackground common>
-                <Header
+                <ProfileHeader
                     style={{
                     }}
                     title={'TDS Report'}
