@@ -183,9 +183,10 @@ const MyContest = () => {
     }
   };
   return (
-    <AppSafeAreaView light={true} hidden={false}>
+    <AppSafeAreaView light={false} hidden={false}>
       <StatusBar
-        backgroundColor={'#282828'}
+        backgroundColor={'black'}
+        barStyle={'light-content'}
         translucent={true}
         networkActivityIndicatorVisible={true}
       />

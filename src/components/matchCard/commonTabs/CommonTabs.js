@@ -5,9 +5,11 @@ import LinearGradient from 'react-native-linear-gradient';
 import { useSelector } from 'react-redux';
 import { TouchableOpacityView } from '../../../common/TouchableOpacityView';
 import styles from './styles';
-import { AppText, BLACK, BLACKOPACITY, FORTEEN, LIGHTBLUE, POPPINS_BOLD, WHITE } from '../../../common/AppText';
+import { AppText, BLACK, BLACKOPACITY, FORTEEN, LIGHTBLUE, POPPINS_BOLD, POPPINS_SEMI_BOLD, WHITE } from '../../../common/AppText';
 import { NLCColor, colors } from '../../../theme/color';
 import SlideSwiper from '../../../common/SlideSwiper';
+import FastImage from 'react-native-fast-image';
+import { bottomtapHed } from '../../../helper/image';
 
 const CommonTabs = ({ activeTab, setActiveTab, totalCount, completeMatch, details, removeTabs }) => {
   const data = [
@@ -94,7 +96,7 @@ const CommonTabs = ({ activeTab, setActiveTab, totalCount, completeMatch, detail
         <View style={styles.tabContainer}>
           {data?.map(item => {
             return item.id == activeTab ? (
-              <LinearGradient
+              <View
               colors={[NLCColor.LightRed,NLCColor.shadeRed]}
               start={{x:1,y:0}}
               end={{x:0,y:1}}
@@ -106,20 +108,29 @@ const CommonTabs = ({ activeTab, setActiveTab, totalCount, completeMatch, detail
                   padding: 5,
                   alignItems: 'center',
                   // backgroundColor: "#1F7596",
-                  borderTopRightRadius: item.id == 1 || item.id == 2 ? 20 : 0,
-                  borderBottomRightRadius: item.id == 1 || item.id == 2 ? 20 : 0,
-                  // borderRightWidth: item.id == 1 ? 2 : 0,
-                  borderBottomRightWidth: item.id == 1 ? 2 : 0,
-                  borderColor: colors.black,
-                  borderTopLeftRadius: item.id == 3 || item.id == 2 ? 20 : 0,
-                  borderBottomLeftRadius: item.id == 3 || item.id == 2 ? 20 : 0,
-                  borderLefttWidth: item.id == 3 ? 2 : 0,
-                  borderBottomLeftWidth: item.id == 3 ? 2 : 0,
+                  // borderTopRightRadius: item.id == 1 || item.id == 2 ? 20 : 0,
+                  // borderBottomRightRadius: item.id == 1 || item.id == 2 ? 20 : 0,
+                  // // borderRightWidth: item.id == 1 ? 2 : 0,
+                  // borderBottomRightWidth: item.id == 1 ? 2 : 0,
+                  // borderColor: colors.black,
+                  // borderTopLeftRadius: item.id == 3 || item.id == 2 ? 20 : 0,
+                  // borderBottomLeftRadius: item.id == 3 || item.id == 2 ? 20 : 0,
+                  // borderLefttWidth: item.id == 3 ? 2 : 0,
+                  // borderBottomLeftWidth: item.id == 3 ? 2 : 0,
+                  borderBottomColor: colors.redText,
+                  borderBottomWidth: 2
                 }}>
-                <AppText type={FORTEEN} weight={POPPINS_BOLD} color={WHITE}>
+                  
+                <AppText type={FORTEEN} weight={POPPINS_SEMI_BOLD} color={BLACKOPACITY}>
                   {item?.title}
                 </AppText>
-              </LinearGradient>
+                {/* <FastImage
+                  resizeMode="contain"
+                  style={{width: 50, height: 12, marginTop: 0}}
+                  source={bottomtapHed}
+                  tintColor={NLCColor.Red}
+                /> */}
+              </View>
             ) : (
               <TouchableOpacityView
                 style={[
@@ -129,7 +140,7 @@ const CommonTabs = ({ activeTab, setActiveTab, totalCount, completeMatch, detail
                   },
                 ]}
                 onPress={() => setActiveTab(item?.id)}>
-                <AppText color={BLACKOPACITY} type={FORTEEN}>{item?.title}</AppText>
+                <AppText color={BLACKOPACITY} weight={POPPINS_SEMI_BOLD} type={FORTEEN}>{item?.title}</AppText>
               </TouchableOpacityView>
             );
           })}

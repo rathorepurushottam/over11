@@ -6,14 +6,14 @@ const styles = StyleSheet.create({
   container: {
     width: Dimensions.get('window').width,
     marginBottom: 15,
-    marginTop: '5%',
+    marginTop: '10%',
   },
   top: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 10,
-    backgroundColor:"#282828",
+    // backgroundColor:"#282828",
     height:70,
   },
   walletView: {
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    paddingHorizontal: 50,
+    paddingRight: 30,
     height: 52,
     marginTop: 10
   }

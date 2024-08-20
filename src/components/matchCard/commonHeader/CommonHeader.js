@@ -21,13 +21,13 @@ import {
   WHITE,
 } from '../../../common/AppText';
 import { TouchableOpacityView } from '../../../common/TouchableOpacityView';
-import { FILTER_ICON, LEFT_ARROW, wallet, notified, rightArrow, backIconMain, WalletIcon, headerIner, VS } from '../../../helper/image';
+import { FILTER_ICON, LEFT_ARROW, wallet, notified, rightArrow, backIconMain, WalletIcon, headerIner, VS, notification } from '../../../helper/image';
 import moment from 'moment';
 import NavigationService from '../../../navigation/NavigationService';
 import styles from './styles';
 import { useSelector, useDispatch } from 'react-redux';
 import CommonTabs from '../commonTabs/CommonTabs';
-import { MY_BALANCE } from '../../../navigation/routes';
+import { MY_BALANCE, Notification__SCREEN } from '../../../navigation/routes';
 import { NLCColor, NewColor, colors } from '../../../theme/color';
 import { LiveTime } from '../../../common/LiveTime';
 import { getFilterSortby, setAllContest, setLoading } from '../../../slices/matchSlice';
@@ -347,12 +347,10 @@ const CommonHeader = ({
             source={backIconMain}
             resizeMode="contain"
             style={styles.leftArrow}
+            tintColor={'#A91515'}
           />
-          <AppText weight={POPPINS_SEMI_BOLD} color={WHITE}>
-            {title}
-          </AppText>
         </TouchableOpacityView>
-        <TouchableOpacityView
+        {/* <TouchableOpacityView
           onPress={() => NavigationService.navigate(MY_BALANCE)}>
           <LinearGradient
             colors={[ '#FFFFFF33',"#FFFFFF26"]}
@@ -379,9 +377,8 @@ const CommonHeader = ({
               </View>
             </View>
           </LinearGradient>
-        </TouchableOpacityView>
-      </View>
-      <ImageBackground source={headerIner} resizeMode='contain' style={styles.header} >
+        </TouchableOpacityView> */}
+        <View style={styles.header}>
         <FastImage
           source={{ uri: details?.TeamAlogo }}
           style={styles.teamImage}
@@ -390,15 +387,16 @@ const CommonHeader = ({
         <View style={{ alignItems: "center" }}>
           <View style={{ flexDirection: "row", alignItems: "center" }}>
             <AppText
-              color={WHITE}
+              color={BLACK}
               weight={POPPINS_BOLD}>
               {details?.TeamsShortNames && details?.TeamsShortNames[0]}
             </AppText>
             <FastImage source={VS}
               resizeMode='contain'
+              tintColor={colors.gray}
               style={{ height: 27, width: 15, marginRight: 5, marginLeft: 5 }} />
             <AppText
-              color={WHITE}
+              color={BLACK}
               weight={POPPINS_BOLD}>
               {details?.TeamsShortNames && details?.TeamsShortNames[1]}
             </AppText>
@@ -418,7 +416,28 @@ const CommonHeader = ({
           style={styles.teamImage}
           resizeMode="contain"
         />
-      </ImageBackground>
+        </View>
+        <TouchableOpacityView
+          onPress={() => NavigationService.navigate(Notification__SCREEN)}>
+         
+            <View style={{ flexDirection: "row", alignItems: "center", }}>
+              {/* <View style={styles.walletbox}> */}
+                <FastImage
+                  style={{ height: 30, width: 22, }}
+                  resizeMode="contain"
+                  source={notification}
+                  tintColor={colors.redText}
+                />
+              {/* </View> */}
+              
+            </View>
+
+        </TouchableOpacityView>
+      </View>
+      
+      {/* <ImageBackground source={headerIner} resizeMode='contain' style={styles.header} > */}
+       
+      {/* </ImageBackground> */}
       {allContest ? (
         <></>
       ) : (

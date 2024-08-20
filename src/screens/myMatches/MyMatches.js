@@ -89,7 +89,7 @@ export const ListEmptyComponent = ({title, activeTab}) => {
     <View
       style={{
         flex: 1,
-        alignItems: 'center',
+        // alignItems: 'center',
         justifyContent: 'center',
       }}>
       {activeTab == 'Live' ? (
@@ -119,7 +119,8 @@ export const ListEmptyComponent = ({title, activeTab}) => {
 
       <PrimaryButton
         onPress={() => NavigationService.navigate(BOTTOM_TAB_HOMESCREEN)}
-        smallBtn={styles.joinButtonMyContest}
+        // smallBtn={styles.joinButtonMyContest}
+         buttonStyle={{paddingHorizontal: 40, marginTop: 20}}
         title="VIEW UPCOMING MATCHES"
         type={TWELVE}
       />
