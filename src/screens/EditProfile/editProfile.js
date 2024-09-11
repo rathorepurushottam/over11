@@ -148,6 +148,8 @@ export default function EditProfile() {
     confimCamera?.current?.close();
     openGallery();
   };
+
+  console.log(userData, "userData");
   return (
     <AppSafeAreaView light={true} hidden={false}>
       <StatusBar
@@ -420,7 +422,7 @@ export default function EditProfile() {
                 </View>
 
                 <AppText weight={POPPINS_MEDIUM} style={{marginTop: 10}}>
-                  Use Galery
+                  Use Gallery
                 </AppText>
               </TouchableOpacityView>
             </View>

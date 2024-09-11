@@ -17,7 +17,7 @@ const SecondaryButton = ({
   titleStyle,
   buttonViewStyle,
   color,
-}: any) => {
+}) => {
 
   return (
     <TouchableOpacityView

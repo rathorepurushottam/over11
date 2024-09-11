@@ -4,9 +4,10 @@ import { TouchableOpacityView } from './TouchableOpacityView';
 import NavigationService from '../navigation/NavigationService';
 import {
   MY_BALANCE,
+  Notification__SCREEN,
 } from '../navigation/routes';
 import {
-  MyBattleLogo,
+  iconbell,
   Over11HeaderLogo,
   Over11icon,
   ThreeIcon,
@@ -35,7 +36,20 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
   let totalbalance = winning_amount + cash_bonus + total_balance
   useEffect(() => {
     setRandom(Math.random())
-  }, [total_balance])
+  }, [total_balance]);
+
+  const formatNumber = (value) => {
+    if (value >= 1e9) {
+      return (value / 1e9).toFixed(1) + 'B'; // Billion
+    } else if (value >= 1e6) {
+      return (value / 1e6).toFixed(1) + 'M'; // Million
+    } else if (value >= 1e3) {
+      return (value / 1e3).toFixed(1) + 'k'; // Thousand
+    } else {
+      return value.toString(); // Less than 1000, return as is
+    }
+  };
+
   return (
     <>
       <StatusBar
@@ -96,13 +110,14 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
                   type={TWELVE}
                   weight={POPPINS_SEMI_BOLD}
                   color={WHITE}>
-                  ₹ {Math.round(totalbalance).toFixed(0)}
+                  {/* ₹ {Math.round(totalbalance).toFixed(0)} */}
+                  ₹ {formatNumber(totalbalance)}
                 </AppText>
               </View>
             </View>
           </LinearGradient>
         </TouchableOpacityView>
-        {/* <TouchableOpacityView
+        <TouchableOpacityView
           style={styles.notifiView}
           onPress={() => NavigationService.navigate(Notification__SCREEN)}>
           <FastImage
@@ -110,7 +125,7 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
             resizeMode="contain"
             style={styles.notificationIcon}
           />
-        </TouchableOpacityView> */}
+        </TouchableOpacityView>
       </LinearGradient>
     </>
   );
@@ -133,15 +148,15 @@ const styles = StyleSheet.create({
     borderRadius: 100,
   },
   combineIcon: {
-    height: 30,
-    width: 100,
-    marginLeft: 85,
+    height: 40,
+    width: 150,
+    marginLeft: 50,
     marginTop: "8%"
   },
   notificationIcon: {
     height: 28,
     width: 28,
-    right: 25
+    // right: 25
   },
   topBar: {
     flexDirection: 'row',
@@ -157,7 +172,7 @@ const styles = StyleSheet.create({
     width: 80,
     borderWidth: 1,
     borderColor:NLCColor.lightPink,
-    marginLeft: 30,
+    marginLeft: 20,
 
   },
   userfilter: {
@@ -187,9 +202,9 @@ const styles = StyleSheet.create({
   notifiView: {
     height: 28,
     with: 28,
-    marginTop: 3,
+    marginTop: 20,
     marginRight: -5,
-    backgroundColor: 'black',
-    borderWidth: 1
+    // backgroundColor: 'black',
+    // borderWidth: 1
   }
 });

@@ -23,7 +23,7 @@ const PrimaryButton = ({
   titleStyle,
   type,
   ...rest
-}: any) => {
+}) => {
   return (
     <TouchableOpacityView
       activeOpacity={1}

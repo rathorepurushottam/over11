@@ -1,5 +1,6 @@
 export const register = require('../../assets/images/register.png');
 export const Over11logo = require('../../assets/images/Over11logo.png');
+export const welcome = require('../../assets/images/welcome.png');
 export const arrow = require('../../assets/images/arrow.png');
 export const background = require('../../assets/images/background.png');
 export const joinMatch = require('../../assets/images/joinMatch.png');
@@ -14,8 +15,8 @@ export const mymatchebox = require('../../assets/images/mymatchebox.png');
 
 
 export const MyBattleReferBackground = require('../../assets/images/MyBattleReferBackground.png');
-// export const Over11profilebox = require('../../assets/images/Over11profilebox.png');
-// export const splash = require('../../assets/images/splash.png');
+export const Over11profilebox = require('../../assets/images/Nlgprofilebox.png');
+export const splash = require('../../assets/images/splash.png');
 
 
 

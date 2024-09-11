@@ -63,6 +63,7 @@ import {
   USER_CONTEST,
   MYBATTLETERM,
   MYBATTLEPOLICY,
+  WELCOME_SCREEN,
 } from './routes';
 import NavigationService from './NavigationService';
 import PlayerPreview from '../screens/playerPreview/PlayerPreview';
@@ -146,6 +147,7 @@ import MyContest from '../screens/MyContest';
 import UserContest from '../screens/MyContest/UserContest';
 import MyBattleTerm from '../screens/MyBattleTerm';
 import PrivacyPolicy from '../screens/PrivacyPolicy';
+import Welcome from '../screens/Welcome';
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 const Navigator = () => {
@@ -240,12 +242,14 @@ const AuthStack = () => {
       screenOptions={{
         headerShown: false,
       }}>
+      
+      <Stack.Screen name={WELCOME_SCREEN} component={Welcome} />
       <Stack.Screen name={MYBATTLELOGIN} component={MyBattleLogin} />
       <Stack.Screen name={MYBATTLEOTP} component={MyBattleOtp} />
       <Stack.Screen name={MYBATTLETERM} component={MyBattleTerm} />
       <Stack.Screen name={MYBATTLEPOLICY} component={PrivacyPolicy} />
 
-      <Stack.Screen name={'Home'} component={BottomMainTab} />
+      {/* <Stack.Screen name={'Home'} component={BottomMainTab} /> */}
     </Stack.Navigator>
   );
 };

@@ -12,36 +12,39 @@ import PrimaryButton from '../../common/primaryButton';
 import {useSelector} from 'react-redux';
 
 import SecondaryButton from '../../common/secondaryButton';
-import {register, logo} from '../../helper/image';
+import {welcome, logo} from '../../helper/image';
 import {RootState} from '../../libs/rootReducer';
 import styles from './styles';
 import NavigationService from '../../navigation/NavigationService';
 import {
   LOGIN_SCREEN,
+  MYBATTLELOGIN,
   REFERRAL_SCREEN,
   REGISTER_SCREEN,
 } from '../../navigation/routes';
 import {TouchableOpacityView} from '../../common/TouchableOpacityView';
 import {AppSafeAreaView} from '../../common/AppSafeAreaView';
 import FastImage from 'react-native-fast-image';
+import { color } from 'native-base/lib/typescript/theme/styled-system';
+import { colors } from '../../theme/color';
 
 const Welcome = () => {
-  const colors = useSelector((state: RootState) => {
-    return state.theme.colors;
-  });
+  // const colors = useSelector((state) => {
+  //   return state.theme.colors;
+  // });
 
   return (
     <AppSafeAreaView style={styles.container} hidden>
       <ImageBackground
-        source={register}
+        source={welcome}
         resizeMode="cover"
         style={styles.image}>
-        <View style={styles.bottomContainer}>
-          <FastImage style={styles.logo} resizeMode="contain" source={logo} />
-          <AppText type={EIGHTEEN} weight={RUSSO} style={styles.title(colors)}>
-            WELCOME TO FantasyScore11
-          </AppText>
-          <AppText
+        {/* <View style={styles.bottomContainer}> */}
+          {/* <FastImage style={styles.logo} resizeMode="contain" source={logo} /> */}
+          {/* <AppText type={EIGHTEEN} weight={RUSSO} style={styles.title(colors)}> */}
+            {/* WELCOME TO Over11
+          </AppText> */}
+          {/* <AppText
             type={SIXTEEN}
             weight={POPPINS}
             style={styles.register(colors)}>
@@ -50,16 +53,17 @@ const Welcome = () => {
           <PrimaryButton
             onPress={() => NavigationService.navigate(REGISTER_SCREEN)}
             buttonStyle={styles.button}
-            title="REGISTER"
-          />
+            title="Get Started"
+          /> */}
 
           <SecondaryButton
-            title="LOGIN"
-            onPress={() => NavigationService.navigate(LOGIN_SCREEN)}
+            title="Get started"
+            onPress={() => NavigationService.navigate(MYBATTLELOGIN)}
             buttonStyle={styles.button}
+            titleStyle={{color: colors.redText}}
           />
 
-          <TouchableOpacityView
+          {/* <TouchableOpacityView
             onPress={() => NavigationService.navigate(REFERRAL_SCREEN)}
             style={styles.bottom}>
             <AppText
@@ -74,9 +78,9 @@ const Welcome = () => {
               weight={POPPINS}
               style={styles.code(colors)}>
               Enter Code
-            </AppText>
-          </TouchableOpacityView>
-        </View>
+            </AppText> */}
+          {/* </TouchableOpacityView> */}
+        {/* </View> */}
       </ImageBackground>
     </AppSafeAreaView>
   );

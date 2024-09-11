@@ -34,7 +34,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: universalPaddingHorizontal,
   },
   button: {
-    marginTop: 20,
+    position: "relative",
+    top: 630,
+    marginHorizontal: 30,
   },
   bottom: {
     marginTop: 25,

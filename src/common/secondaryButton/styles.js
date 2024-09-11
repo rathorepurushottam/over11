@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.redText,
+    backgroundColor: colors.white,
   },
 
   buttonText: {
