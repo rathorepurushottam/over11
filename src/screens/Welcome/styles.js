@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   },
   button: {
     position: "relative",
-    top: 630,
+    top: 700,
     marginHorizontal: 30,
   },
   bottom: {
