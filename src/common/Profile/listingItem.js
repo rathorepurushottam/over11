@@ -67,7 +67,7 @@ const ListingItem = ({title, info, button, border}) => {
             backgroundColor="white"
             type={ELEVEN}
             weight={POPPINS_SEMI_BOLD}>
-            WithDrawl
+            WithDrawal
           </Button>
         )}
       </View>

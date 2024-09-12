@@ -241,16 +241,19 @@ const styles = StyleSheet.create({
     fontFamily: poppinsBoldItalic,
     fontSize: 12,
     fontWeight: '700',
+    color: colors.redText
   },
   button: {
     marginTop: 20,
-    width: "45%"
+    width: "45%",
+    borderWidth: 1,
+    borderColor: colors.redText,
+    borderRadius: 5,
   },
   smallBtn: {
     width: 97,
     height: 37,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 10,
   },
 });

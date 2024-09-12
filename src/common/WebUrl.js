@@ -15,21 +15,21 @@ const WebUrl = ({ route }) => {
     console.log('====================================')
     let titleName = () => {
         if (title == 'Terms & Conditions') {
-            return 'https://Over11fantasy.com/termsNConditionsmobile'
+            return 'http://Over11.in/termsNConditionsmobile'
         } else if (title == 'About Us') {
-            return 'https://Over11fantasy.com/aboutmobile'
+            return 'http://over11.in/aboutmobile'
         } else if (title == 'How to Play') {
-            return 'https://Over11fantasy.com/howToPlaymobile'
+            return 'http://Over11.in/howToPlaymobile'
         } else if (title == 'Privacy Policy') {
-            return 'https://Over11fantasy.com/policymobile'
+            return 'http://Over11.in/policymobile'
         } else if (title == 'Points System') {
-            return 'https://Over11fantasy.com/responsible_gaming'
+            return 'http://Over11.in/responsible_gaming'
         } else if (title == 'Responsible Gaming') {
-            return 'https://Over11fantasy.com/responsible_gaming'
+            return 'http://Over11.in/responsible_gaming'
         } else if (title == 'Legalities') {
-            return 'https://Over11fantasy.com/legalities'
+            return 'http://Over11.in/legalities'
         } else if (title == 'Fair Play Policy') {
-            return 'https://Over11fantasy.com/fairPlay'
+            return 'http://Over11.in/fairPlay'
         }
     }
     return (

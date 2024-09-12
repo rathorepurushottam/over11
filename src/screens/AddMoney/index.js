@@ -1,4 +1,4 @@
-import { View, StatusBar, Linking, ScrollView, BackHandler } from 'react-native';
+import { View, StatusBar, Linking, ScrollView, BackHandler, StyleSheet } from 'react-native';
 import React, { useState, useEffect, useRef } from 'react';
 import Header from '../../common/Header';
 import { AppSafeAreaView } from '../../common/AppSafeAreaView';
@@ -7,10 +7,13 @@ import CommonImageBackground from '../../common/commonImageBackground';
 import {
   AppText,
   BLACK,
+  BOLD,
   FORTEEN,
   LATO_BOLD,
   LIGHTBLUE,
   POPPINS_MEDIUM,
+  POPPINS_SEMI_BOLD,
+  REDTEXT,
   SEMI_BOLD,
   TWELVE,
   WHITE,
@@ -33,6 +36,7 @@ import { colors } from '../../theme/color';
 import RNUpiPayment from 'react-native-upi-payment'
 import NavigationService from '../../navigation/NavigationService';
 import { ADDCASH_VERIFICATION } from '../../navigation/routes';
+import { color } from 'native-base/lib/typescript/theme/styled-system';
 const AddMoney = () => {
   const dispatch = useDispatch()
   const [amount, setAmount] = useState(Number);
@@ -131,7 +135,7 @@ const AddMoney = () => {
                 </View>
 
                 <View>
-                  <AppText type={TWELVE}>
+                  <AppText type={TWELVE} color={REDTEXT} weight={POPPINS_SEMI_BOLD}>
                     INR {fixedToTwo(total_balance)}
                   </AppText>
                 </View>
@@ -193,7 +197,7 @@ const AddMoney = () => {
               {amount ?
                 <>
                   <View style={{ flexDirection: "row", marginTop: 10, alignItems: "center", justifyContent: "space-between" }} >
-                    <AppText type={TWELVE} color={WHITE}>
+                    <AppText type={TWELVE} color={REDTEXT}>
                       Amount to be added in wallet
                     </AppText>
                     <AppText>
@@ -201,7 +205,7 @@ const AddMoney = () => {
                     </AppText>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center", marginTop: 5, justifyContent: "space-between" }} >
-                    <AppText type={TWELVE} color={WHITE}>
+                    <AppText type={TWELVE} color={REDTEXT}>
                       SGST[14%]
                     </AppText>
                     <AppText>
@@ -209,7 +213,7 @@ const AddMoney = () => {
                     </AppText>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center", marginTop: 5, justifyContent: "space-between" }} >
-                    <AppText type={TWELVE} color={WHITE}>
+                    <AppText type={TWELVE} color={REDTEXT}>
                       CGST[14%]
                     </AppText>
                     <AppText>
@@ -217,7 +221,7 @@ const AddMoney = () => {
                     </AppText>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center", marginTop: 5, justifyContent: "space-between" }} >
-                    <AppText type={TWELVE} color={WHITE}>
+                    <AppText type={TWELVE} color={REDTEXT}>
                       Total GST[28%]
                     </AppText>
                     <AppText>
@@ -225,7 +229,7 @@ const AddMoney = () => {
                     </AppText>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center", marginTop: 5, justifyContent: "space-between" }} >
-                    <AppText type={TWELVE} color={WHITE}>
+                    <AppText type={TWELVE} color={REDTEXT}>
                       Deposit Bonus
                     </AppText>
                     <AppText>
@@ -233,12 +237,12 @@ const AddMoney = () => {
                     </AppText>
                   </View>
                   <View style={{
-                    height: 1, borderWidth: 1,
+                     borderWidth: StyleSheet.hairlineWidth,
                     borderColor: "#BEBEBE",
                     marginTop: 5,
                   }} />
                   <View style={{ flexDirection: "row", alignItems: "center", marginTop: 5, justifyContent: "space-between" }} >
-                    <AppText type={TWELVE} color={WHITE}>
+                    <AppText type={TWELVE} color={REDTEXT}>
                       Total Amount
                     </AppText>
                     <AppText>

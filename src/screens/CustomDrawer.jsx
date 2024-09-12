@@ -11,6 +11,7 @@ import {KeyBoardAware} from '../common/KeyboardAware';
 import FastImage from 'react-native-fast-image';
 import {
   BattleIcon,
+  Over11icon,
   FairIcon,
   LegalIcon,
   Over11profilebox,
@@ -76,7 +77,7 @@ export const datatwo = [
   },
   {
     id: 5,
-    FastImage: BattleIcon,
+    FastImage: Over11icon,
     title: 'About Us',
     source: rightArrow,
   },
@@ -102,7 +103,7 @@ export const datathree = [
   // },
   {
     id: 9,
-    FastImage: BattleIcon,
+    FastImage: Over11icon,
     title: 'Responsible Gaming',
     source: rightArrow,
   },

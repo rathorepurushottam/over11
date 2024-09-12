@@ -146,7 +146,7 @@ const MyContest = () => {
         </AppText>
         <PrimaryButton
           onPress={() => setActiveTab(1)}
-          smallBtn={styles.joinButtonMyContest}
+          buttonStyle={{paddingHorizontal: 40, marginTop: 20}}
           title="JOIN A CONTEST"
         />
       </View>

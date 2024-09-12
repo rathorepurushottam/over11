@@ -40,14 +40,14 @@ export const RenderTabBar = (props: any) => {
               height: 38,
               justifyContent: 'space-evenly',
               padding: 5,
-              alignItems: 'center',
+              alignItems: 'flex-start',
             }}>
             <AppText type={FORTEEN} color={focused ? REDTEXT : BLACK} weight={POPPINS_MEDIUM}>
               {route.title}
             </AppText>
             {focused ? 
             <LinearGradient
-            style={{ height: 2, width: 102 }}
+            style={{ height: 2, width: 60 }}
             start={{ x: 0, y: 1 }}
             end={{ x: 1, y: 0 }}
             colors={[
@@ -59,7 +59,7 @@ export const RenderTabBar = (props: any) => {
         )}
         indicatorStyle={{ backgroundColor: 'transparent'}}
         scrollEnabled={!props.scrollEnabled ? props.scrollEnabled : true}
-        tabStyle={[{ width: 'auto' }, props.tabStyle]}
+        tabStyle={[{ width: 'auto', }, props.tabStyle]}
         pressColor={'transparent'}
         style={[styles.tabbar, props.style]}
       />
@@ -264,7 +264,7 @@ const SlideSwiper = ({tabTitles, reverseData}: any) => {
       renderTabBar={props => (
         <RenderTabBar
           {...props}
-          style={{ marginHorizontal: 10 }}
+          // style={{}}
         />
       )}
     />

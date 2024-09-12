@@ -25,6 +25,7 @@ import {
   POPPINS_BOLD,
   POPPINS_MEDIUM,
   POPPINS_SEMI_BOLD,
+  REDTEXT,
   TEN,
   TWENTY_FOUR,
   WHITE,
@@ -199,7 +200,7 @@ const MyBattleReferEarn = () => {
                       flex: 1,
                     }}>
                     <AppText type={POPPINS_MEDIUM}>{item?.title}</AppText>
-                    <AppText numberOfLines={2} type={TEN} color={LIGHTWHITE}>
+                    <AppText numberOfLines={2} type={TEN} color={REDTEXT}>
                       {item?.about}
                     </AppText>
                   </View>
@@ -219,7 +220,7 @@ const MyBattleReferEarn = () => {
               marginHorizontal: universalPaddingHorizontal,
               width: '78%',
             }}
-            titleStyle={{ color: 'white' }}
+            titleStyle={{ color: colors.redText }}
             title="Invite"
           />
           <SolidButton
