@@ -47,7 +47,7 @@ export const RenderTabBar = (props: any) => {
             </AppText>
             {focused ? 
             <LinearGradient
-            style={{ height: 2, width: 60 }}
+            style={{ height: 2, width: route.title === "Withdrawals" ? 80 : 60 }}
             start={{ x: 0, y: 1 }}
             end={{ x: 1, y: 0 }}
             colors={[

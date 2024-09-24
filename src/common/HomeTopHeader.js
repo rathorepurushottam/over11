@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
   combineIcon: {
     height: 40,
     width: 150,
-    marginLeft: 50,
+    marginLeft: 40,
     marginTop: "8%"
   },
   notificationIcon: {
@@ -203,7 +203,8 @@ const styles = StyleSheet.create({
     height: 28,
     with: 28,
     marginTop: 20,
-    marginRight: -5,
+    marginRight: 0,
+    marginLeft: 10,
     // backgroundColor: 'black',
     // borderWidth: 1
   }
