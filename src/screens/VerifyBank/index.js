@@ -21,6 +21,7 @@ import { TouchableOpacityView } from '../../common/TouchableOpacityView';
 import ImagePicker from 'react-native-image-crop-picker';
 import { appOperation } from '../../appOperation';
 import { bankVerifiy, ifscVerifiy } from '../../slices/matchSlice';
+import { colors } from '../../theme/color';
 
 const VerifyBank = () => {
   const dispatch = useDispatch();
@@ -52,9 +53,9 @@ const VerifyBank = () => {
     setState(value?.value);
   };
 
-  const colors = useSelector((state: RootState) => {
-    return state.theme.colors;
-  });
+  // const colors = useSelector((state) => {
+  //   return state.theme.colors;
+  // });
   const onSubmit = () => {
     if (!accountNo) {
       toastAlert.showToastError('Please enter your account number')

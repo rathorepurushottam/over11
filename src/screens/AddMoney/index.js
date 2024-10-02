@@ -78,17 +78,17 @@ const AddMoney = () => {
     if (!isUserVerified) {
       NavigationService.navigate(ADDCASH_VERIFICATION)
     }
-    // else if (amount == '') {
-    //   toastAlert.showToastError('Please enter amount')
-    // } else if (amount.charAt(0) === '0') {
-    //   toastAlert.showToastError('Please enter vaild amount')
-    // } else {
-    //   let data = {
-    //     amount: amount
-    //   }
-    //   dispatch(paymentGetwayPhonepe(data))
-    //   sheetTwo?.current.open()
-    // }
+    else if (amount == '') {
+      toastAlert.showToastError('Please enter amount')
+    } else if (amount.charAt(0) === '0') {
+      toastAlert.showToastError('Please enter vaild amount')
+    } else {
+      let data = {
+        amount: amount
+      }
+      dispatch(paymentGetwayPhonepe(data))
+      sheetTwo?.current.open()
+    }
   }
 
   const paywith = (title) => {

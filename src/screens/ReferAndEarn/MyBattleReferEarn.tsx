@@ -90,7 +90,7 @@ const MyBattleReferEarn = () => {
       <KeyBoardAware style={{ backgroundColor: 'white' }}>
         <ImageBackground
           source={MyBattleReferBackground}
-          resizeMode="contain"
+          resizeMode="cover"
           style={styles.MyBattleReferBackground}>
 
 
@@ -245,7 +245,7 @@ export default MyBattleReferEarn;
 const styles = StyleSheet.create({
   MyBattleReferBackground: {
     height: 315,
-    width: 393,
+    width: '100%',
   },
   main: {
     alignSelf: 'center',
