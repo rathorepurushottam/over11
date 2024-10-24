@@ -57,7 +57,7 @@ const VerifyUPI = () => {
             <InputBox
               placeholder="Enter your UPI ID"
               value={name}
-              placeholderTextColor={colors.grey}
+              placeholderTextColor={colors.black}
               labelStyle={[styles.label, { marginTop: 10 }]}
               label="UPI ID*"
               returnKeyType="next"
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: universalPaddingHorizontal,
   },
   withdraw: {
-    color: colors.white,
+    color: colors.black,
     marginTop: 10,
   },
   box: {
@@ -100,14 +100,14 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 12,
-    color: colors.white,
+    color: colors.black,
     marginTop: 0,
     marginBottom: 5,
   },
   textInputBox: {
     fontFamily: fontFamilyPoppins,
     fontSize: 12,
-    color:colors.white
+    color:colors.black
   },
   topLogo:{
     width:120,

@@ -75,20 +75,21 @@ const AddMoney = () => {
   const isUserVerified = kycDetails?.dl_verified == 1 || kycDetails?.voter_verified == 1 || kycDetails?.adhar_verified == 1
   const AddMoney = () => {
     // toastAlert.showToastError('Payment getway is not implemented')
-    if (!isUserVerified) {
-      NavigationService.navigate(ADDCASH_VERIFICATION)
-    }
-    else if (amount == '') {
-      toastAlert.showToastError('Please enter amount')
-    } else if (amount.charAt(0) === '0') {
-      toastAlert.showToastError('Please enter vaild amount')
-    } else {
-      let data = {
-        amount: amount
-      }
-      dispatch(paymentGetwayPhonepe(data))
-      sheetTwo?.current.open()
-    }
+    // if (!isUserVerified) {
+    //   NavigationService.navigate(ADDCASH_VERIFICATION)
+    // }
+    // else if (amount == '') {
+    //   toastAlert.showToastError('Please enter amount')
+    // } else if (amount.charAt(0) === '0') {
+    //   toastAlert.showToastError('Please enter vaild amount')
+    // } else {
+    //   let data = {
+    //     amount: amount
+    //   }
+    //   dispatch(paymentGetwayPhonepe(data))
+    //   sheetTwo?.current.open()
+    // }
+    sheetTwo?.current.open();
   }
 
   const paywith = (title) => {
@@ -279,7 +280,7 @@ const AddMoney = () => {
             borderTopLeftRadius: 20,
             borderTopRightRadius: 20,
             paddingHorizontal: 18,
-            backgroundColor: colors.bottomBackgroundColor
+            backgroundColor: colors.black
           },
           draggableIcon: {
             backgroundColor: 'transparent',
@@ -307,7 +308,7 @@ const AddMoney = () => {
           style={{
             height: 45,
             width: '100%',
-            backgroundColor: "#606060",
+            backgroundColor: colors.white,
             marginTop: '3%',
             borderRadius: 10,
             flexDirection: 'row',
@@ -321,7 +322,7 @@ const AddMoney = () => {
               height: 40,
               width: 40
             }}
-            tintColor={colors.white}
+            tintColor={colors.black}
           />
           <AppText style={{
             marginTop: -3,
@@ -344,7 +345,7 @@ const AddMoney = () => {
           style={{
             height: 45,
             width: '100%',
-            backgroundColor: "#606060",
+            backgroundColor: colors.white,
             marginTop: '3%',
             borderRadius: 10,
             flexDirection: 'row',

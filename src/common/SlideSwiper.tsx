@@ -40,14 +40,15 @@ export const RenderTabBar = (props: any) => {
               height: 38,
               justifyContent: 'space-evenly',
               padding: 5,
-              alignItems: 'flex-start',
+              // alignItems: ,
+              // backgroundColor: "red"
             }}>
             <AppText type={FORTEEN} color={focused ? REDTEXT : BLACK} weight={POPPINS_MEDIUM}>
               {route.title}
             </AppText>
             {focused ? 
             <LinearGradient
-            style={{ height: 2, width: route.title === "Withdrawals" ? 80 : 60 }}
+            style={{ height: 2, width: route.title === "Withdrawals" ? 83 : 60 }}
             start={{ x: 0, y: 1 }}
             end={{ x: 1, y: 0 }}
             colors={[
@@ -277,6 +278,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0,
     elevation: 0,
     borderBottomWidth: 0,
+    // marginRight: 20
   },
   container: {
     height: 45,

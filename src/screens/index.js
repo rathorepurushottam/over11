@@ -60,8 +60,13 @@ import NavigationService from '../navigation/NavigationService';
 import MyBattleLogin from './MyBattleLogin';
 import { ADD_MONEY_SCREEN, MYBATTLELOGIN, MYBATTLEOTP, MYBATTLEREFEREARN, MY_BALANCE, TRANSACTION_SCREEN } from '../navigation/routes';
 import { HomeTopHeader } from '../common/HomeTopHeader';
+import { useSelector } from 'react-redux';
 
 const ReferAndEarn = () => {
+  const userData = useSelector(state => {
+    return state.profile.userData;
+  });
+  let totalbalance = userData?.winning_amount + userData?.cash_bonus + userData?.total_balance
   const data = [
     {
       id: 1,
@@ -126,7 +131,7 @@ const ReferAndEarn = () => {
                           {item.title}
                         </AppText>
                         <AppText type={TWENTY_FIVE} weight={POPPINS_SEMI_BOLD}>
-                          {item.balance}
+                        {Number(totalbalance).toFixed(1)}
                         </AppText>
                       </View>
 
@@ -162,7 +167,7 @@ const ReferAndEarn = () => {
                           type={FIFTEEN}
                           weight={SEMI_BOLD}
                           color={WHITE}>
-                          {item.deposit}
+                           ₹{userData.totaldeposit}
                         </AppText>
                         <TouchableOpacityView style={styles.depositbutton} onPress={() => NavigationService.navigate(ADD_MONEY_SCREEN)}>
                           <View
@@ -190,7 +195,7 @@ const ReferAndEarn = () => {
                           type={FIFTEEN}
                           weight={SEMI_BOLD}
                           color={BLACK}>
-                          {item.deposit}
+                        ₹{userData.winning_amount}
                         </AppText>
                         <TouchableOpacityView
                           style={[
@@ -239,7 +244,7 @@ const ReferAndEarn = () => {
                           type={FIFTEEN}
                           weight={SEMI_BOLD}
                           color={BLACK}>
-                          {item.deposit}
+                           ₹0
                         </AppText>
                       </View>
                       <View
@@ -261,7 +266,7 @@ const ReferAndEarn = () => {
                           type={FIFTEEN}
                           weight={SEMI_BOLD}
                           color={BLACK}>
-                          {item.deposit}
+                          ₹{userData?.cash_bonus}
                         </AppText>
                       </View>
                     </View>

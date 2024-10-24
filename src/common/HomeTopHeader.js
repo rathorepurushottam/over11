@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     height: 28,
     with: 28,
     marginTop: 20,
-    marginRight: 0,
+    marginRight: 5,
     marginLeft: 10,
     // backgroundColor: 'black',
     // borderWidth: 1

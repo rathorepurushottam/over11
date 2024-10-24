@@ -173,7 +173,7 @@ const VerifyBank = () => {
             <InputBox
               placeholder="Enter your account number"
               value={accountNo}
-              placeholderTextColor={colors.white}
+              placeholderTextColor={colors.black}
               labelStyle={styles.label}
               label="Account Number"
               returnKeyType="next"
@@ -185,7 +185,7 @@ const VerifyBank = () => {
             <InputBox
               placeholder="Confirm account number"
               value={accountNoRe}
-              placeholderTextColor={colors.white}
+              placeholderTextColor={colors.black}
               labelStyle={styles.label}
               label="Confirm Account Number"
               returnKeyType="next"
@@ -197,7 +197,7 @@ const VerifyBank = () => {
             <InputBox
               placeholder="Enter 11 digit IFSC code"
               value={ifsc}
-              placeholderTextColor={colors.white}
+              placeholderTextColor={colors.black}
               labelStyle={[styles.label, { marginTop: 15 }]}
               label="IFSC Code"
               returnKeyType="next"
@@ -209,7 +209,7 @@ const VerifyBank = () => {
             <InputBox
               placeholder="Enter your bank name"
               value={isbank}
-              placeholderTextColor={colors.white}
+              placeholderTextColor={colors.black}
               labelStyle={[styles.label, { marginTop: 15 }]}
               label="Bank Name"
               returnKeyType="next"
@@ -219,7 +219,7 @@ const VerifyBank = () => {
             <InputBox
               placeholder="Your branch name"
               value={branch}
-              placeholderTextColor={colors.white}
+              placeholderTextColor={colors.black}
               labelStyle={[styles.label, { marginTop: 15 }]}
               label="Branch Name"
               returnKeyType="next"

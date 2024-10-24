@@ -126,7 +126,7 @@ const CustomDrawer = () => {
   const userData = useSelector((state) => {
     return state.profile.userData;
   });
-  const [select, setSelect] = useState('1 ');
+  const [select, setSelect] = useState('0');
   const [random, setRandom] = useState(0);
   const [mdlVisibile, setMdlVisible] = useState(false);
   const onSubmit = (id, title) => {
