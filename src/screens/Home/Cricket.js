@@ -29,6 +29,7 @@ import { setMyMatchesHome, setUpComingMatches } from '../../slices/matchSlice';
 import { KeyBoardAware } from '../../common/KeyboardAware';
 import { BaseUrl } from '../../helper/utility';
 import HomeSlider from './HomeSilder';
+import { parse } from 'react-native-svg';
 const search = element => getDate(element).hour < 0;
 const Cricket = ({ random, setRefreshingTwo }) => {
   const dispatch = useDispatch();
@@ -38,6 +39,7 @@ const Cricket = ({ random, setRefreshingTwo }) => {
   const userData = useSelector(state => {
     return state.profile.userData;
   });
+
   const { _id } = userData ?? '';
   const [isMoadlVisible, setIsModalVisible] = useState(false);
   const [intro, setIntro] = useState([]);
@@ -46,6 +48,10 @@ const Cricket = ({ random, setRefreshingTwo }) => {
   const [isConnected, setIsConnected] = useState(false);
   const [ForConnectedTo, setForConnectedTo] = useState(false);
 
+
+  // console.log(myMatchesHome,"UserDataaa")
+  // console.log(upcomingMatches,"upcomingMatches")
+
   useEffect(() => {
     if (_id && _id) {
       onRefresh(_id)
@@ -53,6 +59,7 @@ const Cricket = ({ random, setRefreshingTwo }) => {
       console.log('Hellooo')
     }
   }, [random])
+
   useEffect(() => {
     const interval = setInterval(() => {
       const itemIndex = upcomingMatches.findIndex(search);
@@ -64,11 +71,13 @@ const Cricket = ({ random, setRefreshingTwo }) => {
     }, 1000);
     return () => clearInterval(interval);
   });
+
   useEffect(() => {
     if (upcomingMatches?.length !== 0) {
       dispatch(setUpComingMatches(upcomingMatches));
     }
   }, [upcomingMatches]);
+
   const onRefresh = React.useCallback((_id) => {
     const URL = `${BaseUrl}upcoming-matches?limit=10&skip=0&userid=${_id}`;
 
@@ -99,6 +108,7 @@ const Cricket = ({ random, setRefreshingTwo }) => {
       setRefreshing(false);
     }
   }, [isConnected]);
+
   const getData = React.useCallback((_id) => {
     const URL = `${BaseUrl}upcoming-matches?limit=10&skip=0&userid=${_id}`;
     if (isConnected && wsRef.current) {
@@ -125,6 +135,7 @@ const Cricket = ({ random, setRefreshingTwo }) => {
       setRefreshing(false);
     }
   }, [isConnected]);
+
   useEffect(() => {
     if (_id && _id) {
       if (!ForConnectedTo) {
@@ -139,6 +150,8 @@ const Cricket = ({ random, setRefreshingTwo }) => {
     } else {
     }
   }, [_id, userData]);
+
+  
   return (
     <View style={styles.container}>
       <HomeSlider />
@@ -173,16 +186,25 @@ const Cricket = ({ random, setRefreshingTwo }) => {
           </View>
         </View>
       )}
-      <View style={{borderWidth: StyleSheet.hairlineWidth, borderColor: "black", marginVertical: 15}}></View>
+      <View
+      style={{ 
+        alignItems:'center',
+        justifyContent:'center',
+        flex:1,
+      }}
+      //  style={[{borderWidth: StyleSheet.hairlineWidth, borderColor: "black", marginVertical: 15}]}
+       >
       <AppText
         style={{
+          alignSelf:'center',
           marginTop: myMatchesHome?.length !== 0 ? 5 : 20,
-          marginHorizontal: universalPaddingHorizontal,
+          marginHorizontal: universalPaddingHorizontal
         }}
         type={SIXTEEN}
         weight={POPPINS_SEMI_BOLD} color={BLACK}>
         Upcoming Matches
       </AppText>
+      </View>
       <KeyBoardAware
         refreshControl={
           <RefreshControl refreshing={refershing} onRefresh={onRefresh} />

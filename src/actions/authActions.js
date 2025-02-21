@@ -26,7 +26,7 @@ export const userLogin = data => async dispatch => {
       await AsyncStorage.setItem(USER_TOKEN_KEY, response?.data?.accessToken);
       dispatch(setUserData(response?.data));
       // dispatch(updateDeviceToken());
-      NavigationService.navigate(BOTTOM_NAVIGATION_STACK);
+      NavigationService.navigate('DrawerNavigation');
     } else {
       toastAlert.showToastError(response?.message);
     }
@@ -82,7 +82,7 @@ export const otpVerification =
           dispatch(setUserData(response?.data?._id));
           dispatch(updateDeviceToken());
           dispatch(getUserProfile(true, false));
-          NavigationService.navigate(BOTTOM_NAVIGATION_STACK);
+          NavigationService.navigate('DrawerNavigation');
         } else {
           toastAlert.showToastError(response?.message);
         }

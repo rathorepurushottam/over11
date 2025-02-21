@@ -26,7 +26,7 @@ import {
   TRANSACTION_SCREEN,
   TDS_REPORT,
 } from '../../navigation/routes';
-import {getKycDetails, getUserProfile} from '../../actions/profileAction';
+import {getKycDetails, getUserProfile, getUserWallet} from '../../actions/profileAction';
 import {fixedToTwo} from '../../helper/utility';
 import CommonImageBackground from '../../common/commonImageBackground';
 import {NLCColor, colors} from '../../theme/color';
@@ -38,6 +38,8 @@ const MyBalance = () => {
   const userData = useSelector(state => {
     return state.profile.userData;
   });
+
+  console.log(userData,"userDatauserData")
   const kycDetails = useSelector(state => {
     return state.profile.kycDetails;
   });
@@ -53,7 +55,12 @@ const MyBalance = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   useEffect(() => {
     dispatch(getKycDetails());
+    let isNavigate = false
+    dispatch(getUserWallet());
+    dispatch(getUserProfile(isNavigate))
   }, []);
+
+
   const onSubmit = () => {
     NavigationService.navigate(ADD_MONEY_SCREEN);
     dispatch(getUserProfile(false, false));
@@ -67,17 +74,21 @@ const MyBalance = () => {
       />
       <CommonImageBackground common>
         <ProfileHeader title="My Balance" commonHeader />
-        <View style={{marginHorizontal: 20,borderWidth: 1,
-              borderColor: colors.redText,
-              height: "20%"}}>
+        <View style={{
+          marginHorizontal: 20,
+          borderWidth: 1,
+          borderColor: colors.redText,
+          // height: "20%",
+          paddingVertical:20,
+          borderRadius:4
+          }}>
           <View
             style={{
-              flexDirection: 'column',
+              flexDirection: 'row',
               justifyContent: 'space-between',
-              // alignItems: 'center',
-              marginTop: 20,
-              paddingLeft: 20
-              
+              alignItems:'center',
+              // marginTop: 20,
+              paddingHorizontal: 20
             }}>
             <View>
               <AppText type={FORTEEN} weight={POPPINS_LIGHT}>
@@ -96,15 +107,16 @@ const MyBalance = () => {
                 smallBtn={styles.smallBtn}
               />
             </View>
+            
           </View>
         </View>
 
         <View style={{paddingHorizontal: 20, flex: 1}}>
-          <View>
+          <View >
             <CommonContainer
               style={{
                 width: '100%',
-                height: 274,
+                // height: 274,
                 marginTop: 15,
                 borderRadius: 5,
                 paddingHorizontal: 0,
@@ -128,6 +140,8 @@ const MyBalance = () => {
               />
             </CommonContainer>
           </View>
+
+          
           <CommonContainer
             style={{
               width: '100%',
@@ -244,11 +258,14 @@ const styles = StyleSheet.create({
     color: colors.redText
   },
   button: {
-    marginTop: 20,
-    width: "45%",
+    // marginTop: 20,
+    justifyContent:'center',
+    // width: "45%",
+    paddingHorizontal:10,
     borderWidth: 1,
     borderColor: colors.redText,
     borderRadius: 5,
+    // backgroundColor:colors.redText
   },
   smallBtn: {
     width: 97,

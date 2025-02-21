@@ -31,11 +31,11 @@ import { paymentGetwayPhonepe, paymentGetwayPhonepeText } from '../../slices/mat
 import { fixedToTwo, toastAlert } from '../../helper/utility';
 import RBSheet from 'react-native-raw-bottom-sheet';
 import { WebViewComponent } from '../../components/WebView';
-import { getUserProfile } from '../../actions/profileAction';
+import { getUserProfile, getUserWallet } from '../../actions/profileAction';
 import { colors } from '../../theme/color';
 import RNUpiPayment from 'react-native-upi-payment'
 import NavigationService from '../../navigation/NavigationService';
-import { ADDCASH_VERIFICATION } from '../../navigation/routes';
+import { ADDCASH_VERIFICATION, KYC_SCREEN } from '../../navigation/routes';
 import { color } from 'native-base/lib/typescript/theme/styled-system';
 const AddMoney = () => {
   const dispatch = useDispatch()
@@ -72,25 +72,38 @@ const AddMoney = () => {
       image: BannerLoop,
     },
   ];
+  
   const isUserVerified = kycDetails?.dl_verified == 1 || kycDetails?.voter_verified == 1 || kycDetails?.adhar_verified == 1
   const AddMoney = () => {
     // toastAlert.showToastError('Payment getway is not implemented')
-    // if (!isUserVerified) {
-    //   NavigationService.navigate(ADDCASH_VERIFICATION)
-    // }
-    // else if (amount == '') {
-    //   toastAlert.showToastError('Please enter amount')
-    // } else if (amount.charAt(0) === '0') {
-    //   toastAlert.showToastError('Please enter vaild amount')
-    // } else {
-    //   let data = {
-    //     amount: amount
-    //   }
-    //   dispatch(paymentGetwayPhonepe(data))
-    //   sheetTwo?.current.open()
-    // }
+    
+     if (amount == '') {
+      toastAlert.showToastError('Please enter amount')
+      return;
+    } else if (amount.charAt(0) === '0') {
+      toastAlert.showToastError('Please enter vaild amount')
+      return;
+    } else if (!isUserVerified) {
+      // NavigationService.navigate(ADDCASH_VERIFICATION);
+      NavigationService.navigate(KYC_SCREEN);
+      return;
+    }
+    else {
+      let data = {
+        amount: amount
+      }
+      // dispatch(paymentGetwayPhonepe(data))
+      sheetTwo?.current.open()
+    }
     sheetTwo?.current.open();
   }
+
+
+  useEffect(()=>{
+    let isNavigate = false
+    dispatch(getUserWallet());
+    dispatch(getUserProfile(isNavigate))
+  },[])
 
   const paywith = (title) => {
     if (title == 'PAY_PAGE') {
@@ -98,14 +111,16 @@ const AddMoney = () => {
         amount: amount,
         type: 'PAY_PAGE'
       }
-      dispatch(paymentGetwayPhonepe(data, title, sheet))
-      sheetTwo.current.close();
+      // dispatch(paymentGetwayPhonepe(data, title, sheet))
+      toastAlert.showToastError('Payment GateWay is Required')
+      // sheetTwo.current.close();
     } else {
       let data = {
         amount: amount,
         type: 'UPI_INTENT'
       }
-      dispatch(paymentGetwayPhonepe(data, title, null))
+      toastAlert.showToastError('Payment GateWay is Required')
+      // dispatch(paymentGetwayPhonepe(data, title, null))
     }
   }
 
@@ -289,8 +304,9 @@ const AddMoney = () => {
         }}>
         <TouchableOpacityView
           onPress={() => {
-            sheetTwo.current.close(),
-              dispatch(getUserProfile(false, false));
+            sheetTwo.current.close()
+              // dispatch(getUserProfile(false, false));
+              // dispatch()
           }}
           style={{ marginTop: '3%', alignItems: 'flex-end', padding: 10 }} >
           <FastImage

@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between"
   },
   box: {
-    borderWidth: 1,
-    backgroundColor: "#3F3F3F",
+    // borderWidth: 1,
+    // backgroundColor: "#3F3F3F",
     borderRadius: 8,
     marginTop: 10,
     paddingHorizontal: 10,
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: poppinsSemiBold,
     flex: 1,
-    color: colors.white
+    color: colors.black
   },
   label: {
     marginTop: 0,
@@ -62,10 +62,11 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   buttonStyle: {
-    marginHorizontal: 5,
-    marginBottom: 5,
-    width: 66,
-    height: 21
+    // marginHorizontal: 5,
+    // marginBottom: 5,
+    // paddingHorizontal:20
+    // width: 66,
+    // height: 21
   },
   inputContainerTwo: {
     marginTop: 10,
@@ -76,6 +77,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between"
   },
+  titleStyle:{
+    paddingHorizontal:20,
+  }
 });
 
 export default styles;

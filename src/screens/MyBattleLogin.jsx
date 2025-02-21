@@ -102,6 +102,7 @@ const MyBattleLogin = () => {
           textInputBox={styles.textInputBox}
           labelStyle={styles.label}
           image={callIcon}
+          maxLength = {10}
         />
         {referral && (
           <InputBox
@@ -147,6 +148,15 @@ const MyBattleLogin = () => {
             I confirm that I am 18+ years in age
           </AppText>
         </TouchableOpacityView>
+      
+
+        <View>
+          <PrimaryButton
+            onPress={onSubmit}
+            title="Continue"
+            buttonStyle={styles.button}
+          />
+        </View>
         <View style={styles.ageiconview}>
           <FastImage
             source={AgeIcon}
@@ -167,14 +177,6 @@ const MyBattleLogin = () => {
               Privacy Policy
             </AppText>
           </AppText>
-        </View>
-
-        <View>
-          <PrimaryButton
-            onPress={onSubmit}
-            title="Continue"
-            buttonStyle={styles.button}
-          />
         </View>
         {/* <View style={styles.ageiconview}>
           <FastImage
@@ -242,7 +244,9 @@ const styles = StyleSheet.create({
   ageiconview: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: 20,
+    paddingHorizontal:5,
+    width:"96%"
   },
   referline: {
     height: 1,

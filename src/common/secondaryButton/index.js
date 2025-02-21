@@ -26,7 +26,7 @@ const SecondaryButton = ({
       onPress={onPress}>
         <View style={[styles.buttonContainer, buttonViewStyle]}>
           <AppText
-            color={color ? color : WHITE}
+            color={color ? color : colors.black}
             type={FIFTEEN}
             weight={POPPINS_BOLD}
             style={[styles.buttonText, titleStyle]}>

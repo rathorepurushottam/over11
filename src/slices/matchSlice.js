@@ -518,22 +518,43 @@ export const getOtherUserProfile = data => async dispatch => {
 export const getUpiVerifiy = data => async dispatch => {
   try {
     const res = await appOperation.customer.upiVerifiy(data);
+    console.log(res,"response in verify upi")
     if (res?.success) {
       toastAlert.showToastError(res.message);
       dispatch(getKycDetails());
       NavigationService.navigate(KYC_SCREEN);
     } else {
       toastAlert.showToastError(res.message);
-
     }
   } catch (e) {
     console.log(e, 'resresresres');
-
-    console.log(e);
   } finally {
     dispatch(setLoading(false));
   }
 };
+
+
+export const getUpiVerifiyManual = data => async dispatch => {
+  try {
+    const res = await appOperation.customer.upiVerifiyManual(data);
+    console.log(res,"response in verify upi")
+    if (res?.success) {
+      toastAlert.showToastError(res.message);
+      dispatch(getKycDetails());
+      NavigationService.navigate(KYC_SCREEN);
+    } else {
+      toastAlert.showToastError(res.message);
+    }
+  } catch (e) {
+    console.log(e, 'resresresres');
+  } finally {
+    dispatch(setLoading(false));
+  }
+};
+
+
+
+
 export const getFilterSortby = data => async dispatch => {
   try {
     dispatch(setSortByFilter(data));
@@ -544,6 +565,7 @@ export const getFilterSortby = data => async dispatch => {
   }
 };
 export const paymentGetwayPhonepe = (data, title, sheet) => async dispatch => {
+  // console.log(data,"   ", title, "    ", sheet,"consoleeeeeee");
   try {
     const res = await appOperation.customer.phonePeGetway(data);
     if (res?.success) {
@@ -683,6 +705,7 @@ export const addharVerifiy = (data, filterSheet, setIsTimerActive) => async disp
   dispatch(setLoading(true));
   try {
     const res = await appOperation.customer.addharSendOtp(data);
+    console.log(res,"resssss in addharverify")
     if (res?.success) {
       filterSheet?.current?.open();
       dispatch(setAdharDetails(res.data))
@@ -719,7 +742,9 @@ export const addharVerifiyOtp = (data, filterSheet) => async dispatch => {
   dispatch(setLoading(true));
   try {
     const res = await appOperation.customer.adhaarOtpVerifiry(data);
+    console.log(res,"result in adhar verify")
     if (res?.success) {
+
       toastAlert.showToastError(res.message)
       filterSheet?.current?.close();
       dispatch(getKycDetails());
@@ -737,6 +762,7 @@ export const panVerifiy = (data) => async dispatch => {
   dispatch(setLoading(true));
   try {
     const res = await appOperation.customer.panVerifiyKyc(data);
+    console.log(res,"response in pan verify")
     if (res?.success) {
       toastAlert.showToastError(res.message)
       dispatch(getKycDetails());
@@ -745,7 +771,7 @@ export const panVerifiy = (data) => async dispatch => {
       toastAlert.showToastError(res.message)
     }
   } catch (e) {
-    console.log(e);
+    console.log(e,"error in pan verification");
   } finally {
     dispatch(setLoading(false));
   }
@@ -754,6 +780,7 @@ export const dlVerifiy = (data) => async dispatch => {
   dispatch(setLoading(true));
   try {
     const res = await appOperation.customer.dlVerifiyKyc(data);
+    console.log(res,"response of driving licence")
     if (res?.success) {
       toastAlert.showToastError(res.message)
       dispatch(getKycDetails());
@@ -801,6 +828,30 @@ export const bankVerifiy = (data) => async dispatch => {
     dispatch(setLoading(false));
   }
 };
+
+export const BankManualVerify = (data) => async dispatch => {
+  dispatch(setLoading(true));
+  try {
+    const res = await appOperation.customer.bankVerifiyManualKyc(data);
+    console.log(res,"result in bank verification")
+    if (res?.success) {
+      toastAlert.showToastError(res.message)
+      console.log(res.message,"in bankverification")
+      dispatch(getKycDetails());
+      NavigationService.navigate(KYC_SCREEN);
+    } else {
+      toastAlert.showToastError(res.message)
+      console.log(res.message,"in bankverification11")
+      NavigationService.navigate(KYC_SCREEN);
+    }
+  } catch (e) {
+    console.log(e,"error in manual bank verification");
+  } finally {
+    dispatch(setLoading(false));
+  }
+};
+
+
 export const ifscVerifiy = (data) => async dispatch => {
   dispatch(setLoading(true));
   try {

@@ -173,7 +173,10 @@ export default function EditProfile() {
               width: '90%',
               top: 10,
             }}>
-            <View style={styles.avtarContainer}>
+            <TouchableOpacityView onPress={() => {
+                  confimCamera.current.open()
+             }}
+              style={styles.avtarContainer}>
               <Image
                 style={[styles?.avtharImage]}
                 source={
@@ -191,10 +194,10 @@ export default function EditProfile() {
                 style={styles.cameraContainer}>
                 <Image source={camera} style={styles.cameraIcon} tintColor={NLCColor.white} />
               </TouchableOpacityView>
-            </View>
+            </TouchableOpacityView>
             <View>
               <AppText type={EIGHTEEN} weight={POPPINS_SEMI_BOLD}>
-                My Profile
+               {userData?.full_name ? userData?.full_name :  'My Profile'}
               </AppText>
               <AppText type={FORTEEN} weight={POPPINS_MEDIUM}>
                 Enter Your Details Here

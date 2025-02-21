@@ -27,7 +27,7 @@ import { emailRegex, toastAlert } from '../../helper/utility';
 import { sendKycOtp } from '../../actions/profileAction';
 import NavigationService from '../../navigation/NavigationService';
 import { checkAdhaar, recommendedIcon } from '../../helper/image';
-import { NewColor } from '../../theme/color';
+import { colors, NewColor } from '../../theme/color';
 import FastImage from 'react-native-fast-image';
 import { addharVerifiy, emailVerifiyOtp } from '../../slices/matchSlice';
 
@@ -37,9 +37,9 @@ const VerifyEmail = () => {
   const kycDetails = useSelector(state => {
     return state.profile.kycDetails;
   });
-  const colors = useSelector((state: RootState) => {
-    return state.theme.colors;
-  });
+  // const colors = useSelector((state: RootState) => {
+    // return state.theme.colors;
+  // });
   const [email, setEmail] = useState(
     kycDetails?.email ? kycDetails?.email : '',
   );
@@ -55,9 +55,11 @@ const VerifyEmail = () => {
   const sendOtp = () => {
     if (!emailRegex(email)) {
       return toastAlert.showToastError('Please enter your email')
-    } else if (!otp) {
-      toastAlert.showToastError('Please enter vaild otp')
-    } else {
+    } 
+    // else if (!otp) {
+    //   toastAlert.showToastError('Please enter vaild otp')
+    // } 
+    else {
       const data = {
         email: email,
         otp: Number(otp)
@@ -66,11 +68,16 @@ const VerifyEmail = () => {
     }
   };
   return (
-    <AppSafeAreaView hidden={false}>
+    <AppSafeAreaView hidden={false}statusColor={true}
+    light={true}>
       <StatusBar
-        backgroundColor={'transparent'}
-        translucent={true}
-        networkActivityIndicatorVisible={true}
+       backgroundColor={'#282828'}
+       // barStyle="dark-content"
+       translucent={true}
+       networkActivityIndicatorVisible={true}
+        // backgroundColor={'transparent'}
+        // translucent={true}
+        // networkActivityIndicatorVisible={true}
       />
       <CommonImageBackground common>
         <Header
@@ -103,7 +110,7 @@ const VerifyEmail = () => {
               <TextInput
               allowFontScaling={false}
                 placeholder={'Enter OTP'}
-                placeholderTextColor={colors.white}
+                placeholderTextColor={colors.gray}
                 style={styles.inputStyle}
                 value={otp}
                 onChangeText={(value) => setOtp(value)}
@@ -112,7 +119,7 @@ const VerifyEmail = () => {
               />
               <PrimaryButton
                 type={ELEVEN}
-                smallBtn={{ height: 21, borderRadius: 5 }}
+                // smallBtn={{ height: 21, borderRadius: 5 }}
                 buttonStyle={[styles.buttonStyle, { marginTop: Platform.OS == 'ios' ? -5 : 0 }]}
                 title="Send OTP"
                 onPress={() => onSubmit()}

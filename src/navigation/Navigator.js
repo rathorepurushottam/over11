@@ -178,11 +178,16 @@ const RootStackScreen = () => (
       component={AuthStack}
       options={{headerShown: false}}
     />
+    {/* //<Stack.Screen
+      //name={BOTTOM_NAVIGATION_STACK}
+      //component={BottomMainTab}
+      //options={{headerShown: false}}
+    ///> */}
     <Stack.Screen
-      name={BOTTOM_NAVIGATION_STACK}
-      component={BottomMainTab}
+      name={'DrawerNavigation'}
+      component={DrawerNavigation}
       options={{headerShown: false}}
-    />
+    /> 
     <Stack.Screen name={PROFILE_EDIT} component={EditProfile} />
     <Stack.Screen name={MY_BALANCE} component={MyBalance} />
     <Stack.Screen name={REFER_EARN} component={ReferAndEarn} />
@@ -327,8 +332,8 @@ const BottomMainTab = () => {
         tabBarShowLabel: false,
       }}>
       <BottomTab.Screen
-        name={BOTTOM_TAB_HOMESCREEN}
-        component={HomeDrawer}
+        name={'Home'}
+        component={HomeStack}
         options={{
           tabBarIcon: ({focused}) => (
             <>
@@ -363,8 +368,8 @@ const BottomMainTab = () => {
         }}
       />
       <BottomTab.Screen
-        name={BOTTOM_TAB_CONTEST_SCREEN}
-        component={ContestDrawer}
+        name={'Contest'}
+        component={ContestStack}
         options={{
           tabBarIcon: ({focused}) => (
             <>
@@ -400,8 +405,8 @@ const BottomMainTab = () => {
       />
 
       <BottomTab.Screen
-        name={REFER_EARN}
-        component={WalletDrawer}
+        name={'Wallet'}
+        component={WalletStack}
         options={{
           tabBarIcon: ({focused}) => (
             <>
@@ -444,8 +449,8 @@ const BottomMainTab = () => {
       />
 
       <BottomTab.Screen
-        name={PROFILE}
-        component={ProfileDrawer}
+        name={'Profile'}
+        component={ProfileStack}
         options={{
           tabBarIcon: ({focused}) => (
             <>
@@ -482,127 +487,154 @@ const BottomMainTab = () => {
     </BottomTab.Navigator>
   );
 };
-const HomeDrawer = ({navigation}) => {
-  const isFocused = useIsFocused();
-  return (
-    <Drawer.Navigator
-      initialRouteName="Home"
-      drawerStyle={{width: '75%'}}
-      drawerContent={props => (
-        <CustomDrawer
-          {...props}
-          navigation={navigation}
-          isFocused={isFocused}
-        />
-      )}
-      screenOptions={{
-        drawerActiveBackgroundColor: '#EBF4FF',
-        drawerActiveTintColor: 'black',
-        drawerInactiveBackgroundColor: 'blue',
-        headerShown: false,
-      }}
-      drawerPosition={'left'}>
-      <Drawer.Screen
-        name="Home"
-        component={HomeStack}
-        options={{
-          headerShown: false,
-        }}
-        drawerStyle={{borderWidth: 1}}
-      />
-    </Drawer.Navigator>
-  );
-};
+// const HomeDrawer = ({navigation}) => {
+//   const isFocused = useIsFocused();
+//   return (
+//     <Drawer.Navigator
+//       initialRouteName="Home"
+//       drawerStyle={{width: '75%'}}
+//       drawerContent={props => (
+//         <CustomDrawer
+//           {...props}
+//           navigation={navigation}
+//           isFocused={isFocused}
+//         />
+//       )}
+//       screenOptions={{
+//         drawerActiveBackgroundColor: '#EBF4FF',
+//         drawerActiveTintColor: 'black',
+//         drawerInactiveBackgroundColor: 'blue',
+//         headerShown: false,
+//       }}
+//       drawerPosition={'left'}>
+//       <Drawer.Screen
+//         name="Home"
+//         component={HomeStack}
+//         options={{
+//           headerShown: false,
+//         }}
+//         drawerStyle={{borderWidth: 1}}
+//       />
+//     </Drawer.Navigator>
+//   );
+// };
 
-const ContestDrawer = ({navigation}) => {
-  const isFocused = useIsFocused();
-  return (
-    <Drawer.Navigator
-      initialRouteName="Home"
-      drawerStyle={{width: '75%'}}
-      drawerContent={props => (
-        <CustomDrawer
-          {...props}
-          navigation={navigation}
-          isFocused={isFocused}
-        />
-      )}
-      screenOptions={{
-        drawerActiveBackgroundColor: '#EBF4FF',
-        drawerActiveTintColor: 'black',
-        drawerInactiveBackgroundColor: 'blue',
-        headerShown: false,
-      }}
-      drawerPosition={'left'}>
-      <Drawer.Screen
-        name="Contest"
-        component={ContestStack}
-        options={{
-          headerShown: false,
-        }}
-        drawerStyle={{borderWidth: 1}}
-      />
-    </Drawer.Navigator>
-  );
-};
+// const ContestDrawer = ({navigation}) => {
+//   const isFocused = useIsFocused();
+//   return (
+//     <Drawer.Navigator
+//       initialRouteName="Home"
+//       drawerStyle={{width: '75%'}}
+//       drawerContent={props => (
+//         <CustomDrawer
+//           {...props}
+//           navigation={navigation}
+//           isFocused={isFocused}
+//         />
+//       )}
+//       screenOptions={{
+//         drawerActiveBackgroundColor: '#EBF4FF',
+//         drawerActiveTintColor: 'black',
+//         drawerInactiveBackgroundColor: 'blue',
+//         headerShown: false,
+//       }}
+//       drawerPosition={'left'}>
+//       <Drawer.Screen
+//         name="Contest"
+//         component={ContestStack}
+//         options={{
+//           headerShown: false,
+//         }}
+//         drawerStyle={{borderWidth: 1}}
+//       />
+//     </Drawer.Navigator>
+//   );
+// };
 
-const WalletDrawer = ({navigation}) => {
-  const isFocused = useIsFocused();
-  return (
-    <Drawer.Navigator
-      drawerStyle={{width: '75%'}}
-      drawerContent={props => (
-        <CustomDrawer
-          {...props}
-          navigation={navigation}
-          isFocused={isFocused}
-        />
-      )}
-      screenOptions={{
-        drawerActiveBackgroundColor: '#EBF4FF',
-        drawerActiveTintColor: 'black',
-        drawerInactiveBackgroundColor: 'blue',
-        headerShown: false,
-      }}
-      drawerPosition={'left'}>
-      <Drawer.Screen
-        name="Wallet"
-        component={WalletStack}
-        options={{
-          headerShown: false,
-        }}
-        drawerStyle={{borderWidth: 1}}
-      />
-    </Drawer.Navigator>
-  );
-};
+// const WalletDrawer = ({navigation}) => {
+//   const isFocused = useIsFocused();
+//   return (
+//     <Drawer.Navigator
+//       drawerStyle={{width: '75%'}}
+//       drawerContent={props => (
+//         <CustomDrawer
+//           {...props}
+//           navigation={navigation}
+//           isFocused={isFocused}
+//         />
+//       )}
+//       screenOptions={{
+//         drawerActiveBackgroundColor: '#EBF4FF',
+//         drawerActiveTintColor: 'black',
+//         drawerInactiveBackgroundColor: 'blue',
+//         headerShown: false,
+//       }}
+//       drawerPosition={'left'}>
+//       <Drawer.Screen
+//         name="Wallet"
+//         component={WalletStack}
+//         options={{
+//           headerShown: false,
+//         }}
+//         drawerStyle={{borderWidth: 1}}
+//       />
+//     </Drawer.Navigator>
+//   );
+// };
 
-const ProfileDrawer = ({navigation}) => {
-  const isFocused = useIsFocused();
+// const ProfileDrawer = ({navigation}) => {
+//   const isFocused = useIsFocused();
+//   return (
+//     <Drawer.Navigator
+//       drawerStyle={{width: '75%'}}
+//       drawerContent={props => (
+//         <CustomDrawer
+//           {...props}
+//           navigation={navigation}
+//           isFocused={isFocused}
+//         />
+//       )}
+//       screenOptions={{
+//         drawerActiveBackgroundColor: '#EBF4FF',
+//         drawerActiveTintColor: 'black',
+//         drawerInactiveBackgroundColor: 'blue',
+//         headerShown: false,
+//       }}
+//       drawerPosition={'left'}>
+//       <Drawer.Screen
+//         name="Profile"
+//         component={ProfileStack}
+//         options={{
+//           headerShown: false,
+//         }}
+//         drawerStyle={{borderWidth: 1}}
+//       />
+//     </Drawer.Navigator>
+//   );
+// };
+
+
+const DrawerNavigation = () => {
+  const Drawer = createDrawerNavigator();
   return (
     <Drawer.Navigator
-      drawerStyle={{width: '75%'}}
-      drawerContent={props => (
-        <CustomDrawer
-          {...props}
-          navigation={navigation}
-          isFocused={isFocused}
-        />
-      )}
+      initialRouteName={BOTTOM_NAVIGATION_STACK}
+      drawerContent={(props) => <CustomDrawer {...props} />}
       screenOptions={{
-        drawerActiveBackgroundColor: '#EBF4FF',
-        drawerActiveTintColor: 'black',
-        drawerInactiveBackgroundColor: 'blue',
         headerShown: false,
+        drawerType: "front", // Drawer slides over content
+        overlayColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent overlay
       }}
-      drawerPosition={'left'}>
+    >
       <Drawer.Screen
-        name="Profile"
-        component={ProfileStack}
+        name={BOTTOM_NAVIGATION_STACK}
+        component={BottomMainTab}
         options={{
-          headerShown: false,
+          drawerStyle: {
+            width: "80%",
+          },
+          sceneContainerStyle: { backgroundColor: "transparent" },
         }}
-        drawerStyle={{borderWidth: 1}}
       />
     </Drawer.Navigator>
   );

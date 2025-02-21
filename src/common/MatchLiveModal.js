@@ -69,7 +69,7 @@ const MatchLiveModal = ({ AleartLive }) => {
       <TouchableOpacityView
         onPress={() => {
           AleartLive?.current?.open();
-          NavigationService.reset(BOTTOM_NAVIGATION_STACK);
+          NavigationService.reset('DrawerNavigation');
         }}
         style={styles.buttonContainer}>
         <LinearGradient

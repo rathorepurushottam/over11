@@ -91,32 +91,72 @@ export class AppOperation {
       } else {
         bodyData = JSON.stringify(data);
       }
-
+      
       fetch(uri, { method, headers, body: bodyData })
-        .then(response => {
-          let status = response.status;
-          if (response.ok) {
-            return response
-              .text()
-              .then(responseData => {
-                let jsonData: any = JSON.parse(responseData);
-                resolve({ ...jsonData, code: status });
-              })
-              .catch(errorResponse =>
-                Promise.reject({ code: status, data: errorResponse }),
-              );
+      .then(async (response) => {
+        // console.log(response, "response in appoperation");
+        const status = response.status;
+        const contentType = response.headers.get("content-type");
+        try {
+          const responseData = await response.text();
+    
+          // Check if response is JSON before parsing
+          if (contentType && contentType.includes("application/json")) {
+            const jsonData = JSON.parse(responseData);
+    
+            if (response.ok) {
+              resolve({ ...jsonData, code: status });
+            } else {
+              reject({ code: status, ...jsonData });
+            }
+          } else {
+            // Handle non-JSON responses (e.g., HTML error pages)
+            reject({
+              code: status,
+              data: responseData || "Unexpected non-JSON response",
+            });
           }
-          // Possible 401 or other network error
-          return response
-            .text()
-            .then(errorResponse =>
-              reject({ code: status, ...JSON.parse(errorResponse) }),
-            );
-        })
-        .catch(error => {
-          const customError = this.getErrorMessageForResponse(error);
-          reject(new ApiError(customError));
-        });
+        } catch (parseError) {
+          console.error("Parsing Error:", parseError);
+    
+          reject({
+            code: status,
+            data: "Error parsing response: "
+          });
+        }
+      })
+      .catch((error) => {
+        console.error("Network Error:", error);
+        const customError = this.getErrorMessageForResponse(error);
+        reject(new ApiError(customError));
+      });
+    
+
+      // fetch(uri, { method, headers, body: bodyData })
+      //   .then(response => {
+      //     let status = response.status;
+      //     if (response.ok) {
+      //       return response
+      //         .text()
+      //         .then(responseData => {
+      //           let jsonData: any = JSON.parse(responseData);
+      //           resolve({ ...jsonData, code: status });
+      //         })
+      //         .catch(errorResponse =>
+      //           Promise.reject({ code: status, data: errorResponse }),
+      //         );
+      //     }
+      //     // Possible 401 or other network error
+      //     return response
+      //       .text()
+      //       .then(errorResponse =>
+      //         reject({ code: status, ...JSON.parse(errorResponse) }),
+      //       );
+      //   })
+      //   .catch(error => {
+      //     const customError = this.getErrorMessageForResponse(error);
+      //     reject(new ApiError(customError));
+      //   });
     });
   }
 

@@ -1,126 +1,126 @@
 export const States = [
     {
-    "label": "AN",
+    "label": "Andaman and Nicobar Islands",
     "value": "Andaman and Nicobar Islands"
     },
     {
-    "label": "AR",
+    "label": "Arunachal Pradesh",
     "value": "Arunachal Pradesh"
     },
     {
-    "label": "BR",
+    "label": "Bihar",
     "value": "Bihar"
     },
     {
-    "label": "CG",
+    "label": "Chandigarh",
     "value": "Chandigarh"
     },
     {
-    "label": "CH",
+    "label": "Chhattisgarh",
     "value": "Chhattisgarh"
     },
     {
-    "label": "DH",
+    "label": "Dadra and Nagar Haveli",
     "value": "Dadra and Nagar Haveli"
     },
     {
-    "label": "DD",
+    "label": "Daman and Diu",
     "value": "Daman and Diu"
     },
     {
-    "label": "DL",
+    "label": "Delhi",
     "value": "Delhi"
     },
     {
-    "label": "GA",
+    "label": "Goa",
     "value": "Goa"
     },
     {
-    "label": "GJ",
+    "label": "Gujarat",
     "value": "Gujarat"
     },
     {
-    "label": "HR",
+    "label": "Haryana",
     "value": "Haryana"
     },
     {
-    "label": "HP",
+    "label": "Himachal Pradesh",
     "value": "Himachal Pradesh"
     },
     {
-    "label": "JK",
+    "label": "Jammu and Kashmir",
     "value": "Jammu and Kashmir"
     },
     {
-    "label": "JH",
+    "label": "Jharkhand",
     "value": "Jharkhand"
     },
     {
-    "label": "KA",
+    "label": "Karnataka",
     "value": "Karnataka"
     },
     {
-    "label": "KL",
+    "label": "Kerala",
     "value": "Kerala"
     },
     {
-    "label": "LD",
+    "label": "Lakshadweep",
     "value": "Lakshadweep"
     },
     {
-    "label": "MP",
+    "label": "Madhya Pradesh",
     "value": "Madhya Pradesh"
     },
     {
-    "label": "MH",
+    "label": "Maharashtra",
     "value": "Maharashtra"
     },
     {
-    "label": "MN",
+    "label": "Manipur",
     "value": "Manipur"
     },
     {
-    "label": "ML",
+    "label": "Meghalaya",
     "value": "Meghalaya"
     },
     {
-    "label": "MZ",
+    "label": "Mizoram",
     "value": "Mizoram"
     },
     {
-    "label": "OR",
+    "label": "Odisha",
     "value": "Odisha"
     },
     {
-    "label": "PY",
+    "label": "Puducherry",
     "value": "Puducherry"
     },
     {
-    "label": "PB",
+    "label": "Punjab",
     "value": "Punjab"
     },
     {
-    "label": "RJ",
+    "label": "Rajasthan",
     "value": "Rajasthan"
     },
     {
-    "label": "TN",
+    "label": "Tamil Nadu",
     "value": "Tamil Nadu"
     },
     {
-    "label": "TR",
+    "label": "Tripura",
     "value": "Tripura"
     },
     {
-    "label": "UK",
+    "label": "Uttar Pradesh",
     "value": "Uttar Pradesh"
     },
     {
-    "label": "UP",
+    "label": "Uttarakhand",
     "value": "Uttarakhand"
     },
     {
-    "label": "WB",
+    "label": "West Bengal",
     "value": "West Bengal"
     }
     ];

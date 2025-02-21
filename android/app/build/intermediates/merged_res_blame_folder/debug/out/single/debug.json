@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.Over11.app-merged_res-48:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.Over11.app-main-50:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.Over11.app-merged_res-48:/mipmap-xxhdpi_appicon.png.flat",
+        "source": "com.Over11.app-main-50:/mipmap-xxhdpi/appicon.png"
+    },
+    {
+        "merged": "com.Over11.app-merged_res-48:/mipmap-hdpi_appicon.png.flat",
+        "source": "com.Over11.app-main-50:/mipmap-hdpi/appicon.png"
+    },
+    {
+        "merged": "com.Over11.app-merged_res-48:/mipmap-mdpi_appicon.png.flat",
+        "source": "com.Over11.app-main-50:/mipmap-mdpi/appicon.png"
+    },
+    {
+        "merged": "com.Over11.app-merged_res-48:/mipmap-xhdpi_appicon.png.flat",
+        "source": "com.Over11.app-main-50:/mipmap-xhdpi/appicon.png"
+    },
+    {
+        "merged": "com.Over11.app-merged_res-48:/mipmap-xxxhdpi_appicon.png.flat",
+        "source": "com.Over11.app-main-50:/mipmap-xxxhdpi/appicon.png"
+    }
+]

@@ -13,7 +13,7 @@ import { fontFamilyPoppins } from '../theme/typography';
 import PrimaryButton from '../common/primaryButton';
 import { checkUPIDlNumber, toastAlert } from '../helper/utility';
 import { useDispatch } from 'react-redux'
-import { getUpiVerifiy } from '../slices/matchSlice';
+import { getUpiVerifiy, getUpiVerifiyManual } from '../slices/matchSlice';
 import FastImage from 'react-native-fast-image';
 import { scanIcon } from '../helper/image';
 
@@ -28,7 +28,8 @@ const VerifyUPI = () => {
     const data = {
       upi_number: name,
     };
-    dispatch(getUpiVerifiy(data))
+    console.log("data upi",data)
+    dispatch(getUpiVerifiyManual(data))
   };
   return (
     <AppSafeAreaView>
@@ -114,6 +115,9 @@ const styles = StyleSheet.create({
     height:199,
     alignSelf:"center",
     marginTop:20
+  },
+  button:{
+    marginTop:'5%'
   }
 });
 export default VerifyUPI;

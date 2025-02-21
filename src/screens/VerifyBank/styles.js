@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   textInputBox: {
     fontFamily: fontFamilyPoppins,
     fontSize: 12,
-    color:colors.white
+    color:colors.black
   },
   boxContainer: {
     marginHorizontal: 10,

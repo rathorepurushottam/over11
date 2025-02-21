@@ -79,30 +79,37 @@ const KYC = () => {
   const kycDetails = useSelector((state) => {
     return state.profile.kycDetails;
   });
+  console.log(kycDetails,"kycDetailskycDetails")
   const data = [
     {
       id: 1,
       title: "Bank Account",
       image: bankIcon,
+      isVerified: kycDetails?.bank_verified
     },
     {
       id: 2,
       title: "UPI",
       image: upiIcon,
+      isVerified: kycDetails?.upi_verified
     },
   ];
 
   const isVerified = (id) => {
+    console.log(id,"iddddd")
     if (id == "PAN") {
       return kycDetails?.pan_verified == 1;
     } else if (id == "EMAIL") {
       return kycDetails?.email_verified == 1;
-    }
+    }else if(id == "Aadhar"){
+      // console.log(kycDetails.adhar_verified == 1)
+      return kycDetails.adhar_verified == 1;
+    } 
   };
   const newCheck =
     kycDetails?.pan_verified == 1 &&
     kycDetails?.email_verified == 1 &&
-    (kycDetails?.upi_verified == 1 || kycDetails?.bank_verified == 1);
+    (kycDetails?.upi_verified == 1 && (kycDetails?.upi_verified == 1 || kycDetails?.bank_verified == 1));
 
   useEffect(() => {
     if (newCheck) {
@@ -115,6 +122,8 @@ const KYC = () => {
       return kycDetails?.pan_verified == 2;
     } else if (id == "EMAIL") {
       return kycDetails?.email_verified == 2;
+    }else if(id== "Aadhar"){
+      return kycDetails.adhar_verified == 2;
     }
   };
   const renderItemTwo = (item) => {
@@ -139,9 +148,18 @@ const KYC = () => {
             {item.title}
           </AppText>
         </View>
-        <View style={styles.tickContainer}>
+        {item?.isVerified == 1 ?
+          <FastImage
+            key={item?.id}
+            source={checkAdhaar}
+            resizeMode="contain"
+            style={styles.checkIcon} /> :
+          <View style={styles.tickContainer}>
+            {select == item?.id ? <View style={styles.tick} /> : null}
+          </View>}
+        {/* <View style={styles.tickContainer}>
           {select == item.id ? <View style={styles.tick} /> : <></>}
-        </View>
+        </View> */}
       </TouchableOpacityView>
     );
   };
@@ -157,10 +175,12 @@ const KYC = () => {
       hidden={false}
       statusColor={true}
       light={true}
-      style={{ backgroundColor: "#F8F8F8" }}
-    >
+      style={{ backgroundColor: "#F8F8F8" }}>
       <StatusBar
-        backgroundColor={"transparent"}
+        // backgroundColor={"transparent"}
+        // translucent={true}
+        // networkActivityIndicatorVisible={true}
+        backgroundColor={'#282828'}
         translucent={true}
         networkActivityIndicatorVisible={true}
       />
@@ -233,22 +253,81 @@ const KYC = () => {
                 In Progress
               </AppText>
             ) : (
-              <SecondaryButton
-                type={ELEVEN}
-                title="Verify"
-                buttonViewStyle={{backgroundColor: colors.redText, borderRadius: 10}}
-                buttonStyle={[styles.buttonStyle]}
-                onPress={() => NavigationService.navigate(VERIFY_PAN_SCREEN)}
-              />
+              <></>
+              // <SecondaryButton
+              //   type={ELEVEN}
+              //   title="Verify"
+              //   buttonViewStyle={{backgroundColor: colors.redText, borderRadius: 10}}
+              //   buttonStyle={[styles.buttonStyle]}
+              //   onPress={() => NavigationService.navigate(VERIFY_PAN_SCREEN)}
+              // />
             )}
           </TouchableOpacityView>
+
           <AppText
+            weight={POPPINS_MEDIUM}
+            type={FORTEEN}
+            style={styles.getVerified}>
+            Aadhar Verification
+          </AppText>
+
+          <TouchableOpacityView
+            onPress={() =>
+              isVerified("Aadhar")
+                ? toastAlert.showToastError("Your Aadhar have been Verfied")
+                : checkInProgress("Aadhar")
+                ? toastAlert.showToastError("Your Adhar have been progress")
+                : NavigationService.navigate(VERIFY_ADHAAR_SCREEN)
+            }
+            style={styles.panContainer}
+          >
+            <View style={styles.underContainer}>
+              <View style={styles.pancardlayerview}>
+                <FastImage
+                  source={panIcon}
+                  resizeMode="contain"
+                  style={styles.renderImage}
+                />
+              </View>
+              <AppText
+                type={THIRTEEN}
+                weight={POPPINS_MEDIUM}
+                style={{ marginLeft: 10 }}
+              >
+                Aadhar
+              </AppText>
+            </View>
+            {isVerified("Aadhar") ? (
+              <FastImage
+                source={checkAdhaar}
+                resizeMode="contain"
+                style={styles.checkIcon}
+              />
+            ) : checkInProgress("Aadhar") ? (
+              <AppText type={THIRTEEN} weight={POPPINS_SEMI_BOLD} color={RED}>
+                In Progress
+              </AppText>
+            ) : (
+              <></>
+            //   <SecondaryButton
+            //   type={ELEVEN}
+            //   title="Verify"
+            //   buttonViewStyle={{backgroundColor: colors.redText, borderRadius: 10}}
+            //   buttonStyle={[styles.buttonStyle]}
+            //   onPress={() => NavigationService.navigate(VERIFY_ADHAAR_SCREEN)}
+            // />
+            )}
+          </TouchableOpacityView>
+
+          
+          {/* <AppText
             weight={POPPINS_MEDIUM}
             type={FORTEEN}
             style={styles.getVerified}
           >
             Email Verification
           </AppText>
+
           <TouchableOpacityView
             onPress={() =>
               isVerified("EMAIL")
@@ -286,15 +365,16 @@ const KYC = () => {
                 In Progress
               </AppText>
             ) : (
-              <SecondaryButton
-              type={ELEVEN}
-              title="Verify"
-              buttonViewStyle={{backgroundColor: colors.redText, borderRadius: 10}}
-              buttonStyle={[styles.buttonStyle]}
-              onPress={() => NavigationService.navigate(VERIFY_EMAIL_SCREEN)}
-            />
+            //   <SecondaryButton
+            //   type={ELEVEN}
+            //   title="Verify"
+            //   buttonViewStyle={{backgroundColor: colors.redText, borderRadius: 10}}
+            //   buttonStyle={[styles.buttonStyle]}
+            //   onPress={() => NavigationService.navigate(VERIFY_EMAIL_SCREEN)}
+            // />
+            <></>
             )}
-          </TouchableOpacityView>
+          </TouchableOpacityView> */}
           <AppText
             style={{ marginTop: 10, marginBottom: 10 }}
             weight={POPPINS_MEDIUM}
@@ -306,7 +386,27 @@ const KYC = () => {
             return renderItemTwo(item);
           })}
         </KeyBoardAware>
-        {select ? (
+
+        {
+          select === 1 && kycDetails?.bank_verified === 1 ? (
+            // NavigationService.navigate(VERIFY_BANK_SCREEN),
+            toastAlert.showToastError("Your bank have been Verified"),
+            setSelect('')
+          ) : select === 2 && kycDetails?.upi_verified === 1 ? (
+            // NavigationService.navigate(VERIFY_UPI),
+            toastAlert.showToastError("Your upi have been Verified"),
+            setSelect('')
+          ) : select && (
+            <View style={{ paddingHorizontal: universalPaddingHorizontal }}>
+              <PrimaryButton
+                buttonStyle={styles.buttonTwo}
+                title={select === 1 ? 'Add Bank' : 'Add UPI'}
+                onPress={onSubmit}
+              />
+            </View>
+          )
+        }
+        {/* {select ? (
           <View style={{ paddingHorizontal: universalPaddingHorizontal }}>
             <PrimaryButton
               buttonStyle={styles.buttonTwo}
@@ -316,7 +416,7 @@ const KYC = () => {
           </View>
         ) : (
           <></>
-        )}
+        )} */}
         <Modal
           animationType="fade"
           transparent={true}
@@ -378,6 +478,7 @@ const styles = StyleSheet.create({
   },
   panContainer: {
     paddingHorizontal: 1,
+    paddingRight:8,
     borderRadius: 10,
     borderWidth: 1,
     // borderColor: '#002E612B',
@@ -390,6 +491,7 @@ const styles = StyleSheet.create({
   underContainer: {
     flexDirection: "row",
     alignItems: "center",
+    // paddingRight:10,
   },
   renderImage: {
     height: 20,
@@ -403,8 +505,9 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   buttonStyle: {
-    marginHorizontal: 5,
+    // marginHorizontal: 5,
     width: 66,
+    color:'#fff'
     // height: 21
   },
   buttonTwo: {

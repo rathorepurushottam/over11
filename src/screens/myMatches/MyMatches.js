@@ -53,9 +53,9 @@ export const RenderTabBar = props => {
           style={{
             flexDirection: 'column',
             width: '100%',
-            height: 38,
+            height: 30,
             justifyContent: 'space-between',
-            padding: 3,
+            // padding: 3,
             alignItems: 'center',
           }}>
           <AppText
@@ -66,12 +66,12 @@ export const RenderTabBar = props => {
           </AppText>
           {focused ? (
             <LinearGradient
-              style={{height: 2, width: 95}}
+              style={{height: 2, width: 90}}
               start={{x: 0, y: 1}}
               end={{x: 1, y: 0}}
               colors={[NLCColor.LightRed, NLCColor.shadeRed]}></LinearGradient>
           ) : (
-            <View style={{width: 100, height: 2}}></View>
+            <View style={{width: Screen.Width/3.5, height: 2}}></View>
           )}
         </View>
       )}

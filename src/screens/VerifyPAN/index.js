@@ -89,11 +89,13 @@ const VerifyPAN = () => {
 
     if (!name) {
       toastAlert.showToastError('Please Enter Your Name')
-    } else if (!checkValidPanCardNumber(pan)) {
+    } 
+     else if (!checkValidPanCardNumber(pan)) {
       toastAlert.showToastError('Please Enter Vaild Pan Number')
-    } else if (!dob) {
-      toastAlert.showToastError('Please Enter Your DOB')
-    }
+    } 
+    // else if (!dob) {
+    //   toastAlert.showToastError('Please Enter Your DOB')
+    // }
     // else if (!imageUrl) {
     //   toastAlert.showToastError('Please Upload Pan Image')
     // } 
@@ -103,13 +105,14 @@ const VerifyPAN = () => {
         name: name,
         // pan_image: imageUrl,
       };
+      console.log(data,"pan data")
       dispatch(panVerifiy(data));
       // console.log(data,'=====');
     }
   };
   const nameWithoutspace = name.trimLeft();
   const trailingTrimmedName = nameWithoutspace.trimRight();
-  console.log(name.replace(/\s+/g, ''), '======sssss');
+  // console.log(name.replace(/\s+/g, ''), '======sssss');
   const uploadImage = async () => {
     try {
       const uploadData = new FormData();
@@ -131,15 +134,22 @@ const VerifyPAN = () => {
 
 
   return (
-    <AppSafeAreaView hidden={false}>
+    <AppSafeAreaView  
+    hidden={false}
+    statusColor={true}
+    light={true}
+    >
       <StatusBar
-        backgroundColor={'transparent'}
+        // backgroundColor={'transparent'}
+        // translucent={true}
+        // networkActivityIndicatorVisible={true}
+        backgroundColor={'#282828'}
         translucent={true}
         networkActivityIndicatorVisible={true}
       />
       <CommonImageBackground common>
         <Header
-          style={{ padding: universalPaddingHorizontal, marginTop: '10%' }}
+          style={{ padding: universalPaddingHorizontal,}}
           commonHeader
           title="Verify PAN Card"
         />
@@ -176,7 +186,7 @@ const VerifyPAN = () => {
               <TextInput
                 allowFontScaling={false}
                 placeholder={'Pan Number'}
-                placeholderTextColor={colors.white}
+                placeholderTextColor={colors.gray}
                 style={styles.inputStyle}
                 value={pan}
                 onChangeText={(value) => setPan(value)}
@@ -190,7 +200,7 @@ const VerifyPAN = () => {
               <TextInput
                 allowFontScaling={false}
                 placeholder={'Pan Card Holder Name '}
-                placeholderTextColor={colors.white}
+                placeholderTextColor={colors.gray}
                 style={styles.inputStyle}
                 value={name}
                 onChangeText={(value) => setName(value)}
@@ -199,7 +209,7 @@ const VerifyPAN = () => {
             <TouchableOpacityView
               onPress={() => serIsDatePickerVisible(true)}
               style={styles.inputContainer}>
-              <AppText type={THIRTEEN} weight={POPPINS_SEMI_BOLD} color={dob ? WHITE : WHITE}>
+              <AppText type={THIRTEEN} weight={POPPINS_SEMI_BOLD} color={dob ? colors.black : colors.gray}>
                 {dob ? dob : 'Date of birth'}
               </AppText>
               <FastImage source={calanderIcon} resizeMode='contain' style={styles.checkIcon} tintColor={colors.white} />
@@ -267,7 +277,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: poppinsSemiBold,
     flex: 1,
-    color: colors.white
+    color: colors.black
   },
   checkIcon: {
     height: 20,

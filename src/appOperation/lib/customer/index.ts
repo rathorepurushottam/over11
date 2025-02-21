@@ -77,6 +77,14 @@ export default (appOperation: AppOperation) => ({
             data,
             CUSTOMER_TYPE,
         ),
+
+        upiVerifiyManual: (data: any) =>
+            appOperation.post(
+                `user/manualupi`,
+                data,
+                CUSTOMER_TYPE,
+            ),
+
     phonePeGetway: (data: any) =>
         appOperation.post(
             `payment/gateway`,
@@ -184,6 +192,11 @@ export default (appOperation: AppOperation) => ({
     bankVerifiyKyc: (data: any) =>
         appOperation.post(
             `user/verifybankaccount`, data, CUSTOMER_TYPE),
+
+            bankVerifiyManualKyc: (data: any) =>
+                appOperation.post(
+                `user/manualbank`, data, CUSTOMER_TYPE),
+                    
     ifscVerifiyKyc: (data: any) =>
         appOperation.post(
             `user/checkifsc`, data, CUSTOMER_TYPE),

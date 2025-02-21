@@ -20,7 +20,7 @@ import { bank } from '../../helper/image';
 import { TouchableOpacityView } from '../../common/TouchableOpacityView';
 import ImagePicker from 'react-native-image-crop-picker';
 import { appOperation } from '../../appOperation';
-import { bankVerifiy, ifscVerifiy } from '../../slices/matchSlice';
+import { BankManualVerify, bankVerifiy, ifscVerifiy } from '../../slices/matchSlice';
 import { colors } from '../../theme/color';
 
 const VerifyBank = () => {
@@ -42,6 +42,9 @@ const VerifyBank = () => {
   }, [ifscDetails])
   const userData = useSelector(state => {
     return state.profile.userData;
+  });
+  const kycDetails = useSelector(state => {
+    return state.profile.kycDetails;
   });
   const data = [
     { value: 'Delhi', label: 'Delhi' },
@@ -69,13 +72,14 @@ const VerifyBank = () => {
       toastAlert.showToastError('Please enter branch name')
     } else {
       let data = {
-        bank_image: imageUrl,
+        // bank_image: imageUrl,
         account_number: accountNo,
-        ifsc_code: ifsc,
+        ifsc: ifsc,
         bank_name: isbank,
         branch_name: branch,
       }
-      dispatch(bankVerifiy(data));
+      console.log(data,"Dataaa bank")
+      dispatch(BankManualVerify(data));
     }
   };
   const formatUserName = (textValue) => {
@@ -181,6 +185,7 @@ const VerifyBank = () => {
               textInputBox={styles.textInputBox}
               keyboardType={'decimal-pad'}
               maxLength={17}
+              editable={kycDetails?.bank_details?.account_number ? false : true}
             />
             <InputBox
               placeholder="Confirm account number"
@@ -231,7 +236,7 @@ const VerifyBank = () => {
               value={state}
               placeholder="Rajasthan"
               items={data}
-              onChangeValue={onChangeValue}
+              onSelectItem={onChangeValue}
               style={{ marginBottom: 10 }}
             />
           </View>

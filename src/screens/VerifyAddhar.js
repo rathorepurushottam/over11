@@ -178,12 +178,14 @@ const VerifyAdhaarcard = () => {
       toastAlert.showToastError('Please enter vaild adhaar number')
     } else if (!dob) {
       toastAlert.showToastError('Please enter vaild DOB')
-    } else if (!otp) {
-      toastAlert.showToastError('Please enter vaild OTP')
-    } else {
+    } 
+    // else if (!otp) {
+    //   toastAlert.showToastError('Please enter vaild OTP')
+    // } 
+    else {
       let data = {
         request_id: request_id,
-        otp: otp,
+        // otp: otp,
         task_id: task_id,
         aadhar_number: name.replace(/\s/g, ''),
         dob: dob.split('/').map(part => part.replace(/^0+/, '')).join('/'),
@@ -193,10 +195,13 @@ const VerifyAdhaarcard = () => {
     }
   }
   return (
-    <AppSafeAreaView>
+    <AppSafeAreaView
+     hidden={false}
+    statusColor={true}
+    light={true}>
       <StatusBar
-        backgroundColor={'transparent'}
-        barStyle="dark-content"
+        backgroundColor={'#282828'}
+        // barStyle="dark-content"
         translucent={true}
         networkActivityIndicatorVisible={true}
       />
@@ -204,7 +209,7 @@ const VerifyAdhaarcard = () => {
         <Header
           commonHeader
           title="Aadhar Card Verification"
-          style={{ padding: universalPaddingHorizontal, marginTop: '10%' }}
+          style={{ padding: universalPaddingHorizontal,  }}
         />
         <KeyBoardAware style={styles.bottomContainer}>
           <FastImage source={BannerVerify} resizeMode='stretch' style={styles.topBanner} />
@@ -240,27 +245,6 @@ const VerifyAdhaarcard = () => {
               <FastImage source={calanderIcon} resizeMode='contain' style={styles.checkIcon} />
             </TouchableOpacityView>
             <View style={styles.inputContainer}>
-              <TextInput
-              allowFontScaling={false}
-                placeholder={'Enter OTP'}
-                placeholderTextColor={NewColor.linerBlacklight}
-                style={styles.inputStyle}
-                value={otp}
-                onChangeText={(value) => setOtp(value)}
-                maxLength={6}
-                keyboardType={'decimal-pad'}
-              />
-              {isTimerActive  ? (
-                <AppText weight={POPPINS_SEMI_BOLD} type={THIRTEEN}>
-                  {formatTime(resendButtonDisabledTime)}
-                </AppText>) : (
-                <PrimaryButton
-                  type={ELEVEN}
-                  smallBtn={{ height: 21, borderRadius: 5 }}
-                  buttonStyle={[styles.buttonStyle, { marginTop: Platform.OS == 'ios' ? -5 : 0 }]}
-                  title="Send OTP"
-                  onPress={() => sendOtp()}
-                />)}
             </View>
           </View>
           <DateTimePickerModal
@@ -462,8 +446,8 @@ const styles = StyleSheet.create({
   },
   buttonStyle: {
     marginHorizontal: 5,
-    marginBottom: 5,
-    width: 66,
+    // marginBottom: 5,
+    // width: 66,
     height: 21
   },
   adhaarIcon: {

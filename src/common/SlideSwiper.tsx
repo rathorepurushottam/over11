@@ -39,8 +39,10 @@ export const RenderTabBar = (props: any) => {
               width: '100%',
               height: 38,
               justifyContent: 'space-evenly',
-              padding: 5,
-              // alignItems: ,
+              paddingLeft:10,
+              // padding: 5,
+              // paddingHorizontal:10,
+              // alignItems: 'center',
               // backgroundColor: "red"
             }}>
             <AppText type={FORTEEN} color={focused ? REDTEXT : BLACK} weight={POPPINS_MEDIUM}>
@@ -48,13 +50,14 @@ export const RenderTabBar = (props: any) => {
             </AppText>
             {focused ? 
             <LinearGradient
-            style={{ height: 2, width: route.title === "Withdrawals" ? 83 : 60 }}
+            style={{ height: 2, width: route.title === "Withdrawals" ? 80 : 70 }}
             start={{ x: 0, y: 1 }}
             end={{ x: 1, y: 0 }}
             colors={[
               NLCColor.LightRed,
               NLCColor.shadeRed
-            ]}></LinearGradient> :<View style={{width:102, height:2}}></View>
+            ]}>
+            </LinearGradient> :<View style={{width:Screen.Width/3.9, height:2}}></View>
             }
           </View>
         )}
@@ -173,7 +176,8 @@ const SlideSwiper = ({tabTitles, reverseData}: any) => {
     contentContainerStyle={{
       flexGrow: 1,
     }}
-    ListEmptyComponent={isLoading ? <></> : <View
+    ListEmptyComponent={isLoading ? <></> : 
+  <View
     style={{
       flex: 1,
       alignItems: 'center',
@@ -301,20 +305,3 @@ const styles = StyleSheet.create({
     borderBottomColor: "#BEBEBE"
   },
 })
-{/* <TabView
-navigationState={{ index, routes }}
-renderScene={renderScene}
-onIndexChange={setIndex}
-initialLayout={{ width: Screen.Width }}
-renderTabBar={props => (
-  <RenderTabBar
-    {...props}
-    style={{ marginHorizontal: 10 }}
-  />
-)}
-/> */}
-// const renderScene = SceneMap({
-//   first: () => contestView(),
-//   second: () => MyContestView(),
-//   three: () => MyTeamView()
-// })

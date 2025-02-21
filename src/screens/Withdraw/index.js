@@ -206,7 +206,7 @@ const Withdraw = () => {
             paddingHorizontal: 20,
             paddingVertical: 15
           }} >
-            <PrimaryButton onPress={onSubmit} title="WITHDRAWL" />
+            <PrimaryButton onPress={onSubmit} title="WITHDRAWAL" />
           </View>
         </CommonImageBackground>
 

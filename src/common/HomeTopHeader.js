@@ -33,7 +33,11 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
     return state.profile.userData;
   });
   const { total_balance, cash_bonus, winning_amount } = userData ?? '';
-  let totalbalance = winning_amount + cash_bonus + total_balance
+  let totalbalance = winning_amount + cash_bonus + total_balance;
+  // let totalbalance = 0;
+
+  
+  console.log(total_balance,"total_balancetotal_balancetotal_balance")
   useEffect(() => {
     setRandom(Math.random())
   }, [total_balance]);
@@ -94,7 +98,7 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
             colors={[ "#FFFFFF33","#FFFFFF26"]}
             start={{ x:1, y: 0 }}
             end={{ x: 0, y: 0 }}
-            style={styles.walletView}>
+            style={[styles.walletView, totalbalance < 1000 ? {width:70} : {}]}>
             <View style={{ flexDirection: "row", alignItems: "center", }}>
               <View style={styles.walletbox}>
                 <FastImage
@@ -106,7 +110,7 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
               </View>
               <View>
                 <AppText
-                  style={{  marginLeft: 7 }}
+                  style={{  marginLeft: 3 }}
                   type={TWELVE}
                   weight={POPPINS_SEMI_BOLD}
                   color={WHITE}>
@@ -117,6 +121,7 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
             </View>
           </LinearGradient>
         </TouchableOpacityView>
+        
         <TouchableOpacityView
           style={styles.notifiView}
           onPress={() => NavigationService.navigate(Notification__SCREEN)}>
@@ -150,7 +155,7 @@ const styles = StyleSheet.create({
   combineIcon: {
     height: 40,
     width: 150,
-    marginLeft: 40,
+    marginLeft: 30,
     marginTop: "8%"
   },
   notificationIcon: {
@@ -169,14 +174,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: 2,
     height: 30,
-    width: 80,
+    // width: 80, 
+    paddingRight:4,
     borderWidth: 1,
     borderColor:NLCColor.lightPink,
     marginLeft: 20,
 
   },
   userfilter: {
-    position: "absolute", alignSelf: "flex-end", top: 18
+    position: "absolute", 
+    alignSelf: "flex-end",
+     top: 18
   },
   walletbox: {
     height: 28,
@@ -209,3 +217,4 @@ const styles = StyleSheet.create({
     // borderWidth: 1
   }
 });
+

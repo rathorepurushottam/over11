@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
   buttonText:{
     fontWeight:"700",
     textTransform:"uppercase",
+    paddingHorizontal:20
   },
 });
 
