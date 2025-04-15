@@ -27,6 +27,7 @@ import { color } from 'native-base/lib/typescript/theme/styled-system';
 import { NewColor, colors } from '../theme/color';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import moment from 'moment';
+import SecondaryButton from '../common/secondaryButton';
 
 
 const VerifyAdhaarcard = () => {
@@ -254,12 +255,16 @@ const VerifyAdhaarcard = () => {
                 <AppText weight={POPPINS_SEMI_BOLD} type={THIRTEEN}>
                   {formatTime(resendButtonDisabledTime)}
                 </AppText>) : (
-                <PrimaryButton
+                <SecondaryButton
                   type={ELEVEN}
-                  smallBtn={{ height: 21, borderRadius: 5 }}
-                  buttonStyle={[styles.buttonStyle, { marginTop: Platform.OS == 'ios' ? -5 : 0 }]}
+                  // smallBtn={{ height: 29, borderRadius: 5 }}
+                  titleStyle={{fontSize: 12,
+                    fontFamily: fontFamilyPoppins,
+                    color: colors.redText}}
+                  buttonStyle={[styles.buttonStyle]}
                   title="Send OTP"
                   onPress={() => sendOtp()}
+                  buttonViewStyle={{height: 30}}
                 />)}
             </View>
           </View>
@@ -462,9 +467,13 @@ const styles = StyleSheet.create({
   },
   buttonStyle: {
     marginHorizontal: 5,
-    marginBottom: 5,
+    // marginBottom: 5,
     width: 66,
-    height: 21
+    // height: 21,
+    borderWidth: 1,
+    borderRadius: 4,
+    borderColor: colors.redText
+   
   },
   adhaarIcon: {
     width: 170,

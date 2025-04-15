@@ -47,15 +47,17 @@ export const RenderTabBar = props => {
       {...props}
       contentContainerStyle={{
         flexGrow: 1,
+        // marginLeft: 10
       }}
       renderLabel={({route, focused}) => (
         <View
           style={{
             flexDirection: 'column',
             width: '100%',
-            height: 38,
+            // height: 38,
             justifyContent: 'space-between',
             padding: 3,
+            paddingHorizontal: 8,
             alignItems: 'center',
           }}>
           <AppText

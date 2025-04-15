@@ -1,19 +1,9 @@
-import {
-  View,
-  Text,
-  StatusBar,
-  Image,
-  FlatList,
-  Modal,
-  Platform,
-  StyleSheet,
-  Dimensions,
-} from "react-native";
-import React, { useEffect, useState } from "react";
-import Header from "../../common/Header";
-import { AppSafeAreaView } from "../../common/AppSafeAreaView";
-import { KeyBoardAware } from "../../common/KeyboardAware";
-import CommonImageBackground from "../../common/commonImageBackground";
+import { View, Text, StatusBar, Image, FlatList, Modal, Platform, StyleSheet, Dimensions, Alert } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import Header from '../../common/Header';
+import { AppSafeAreaView } from '../../common/AppSafeAreaView';
+import { KeyBoardAware } from '../../common/KeyboardAware';
+import CommonImageBackground from '../../common/commonImageBackground';
 import {
   AppText,
   BLACK,
@@ -25,33 +15,25 @@ import {
   POPPINS_MEDIUM,
   POPPINS_SEMI_BOLD,
   RED,
+  SEMI_BOLD,
   SIXTEEN,
   TEN,
   THIRTEEN,
   TWELVE,
   WHITE,
-} from "../../common/AppText";
-import { useSelector } from "react-redux";
-import InputBox from "../../common/InputBox";
-import { RootState } from "../../libs/rootReducer";
-import {
-  scan,
-  copy,
-  downArrow,
-  done,
-  kycLogo,
-  panIcon,
-  bankIcon,
-  upiIcon,
-  checkAdhaar,
-} from "../../helper/image";
-import FastImage from "react-native-fast-image";
-import { phone, email, bank, panCard } from "../../helper/image";
-import { universalPaddingHorizontal } from "../../theme/dimens";
-import SecondaryButton from "../../common/secondaryButton";
-import NavigationService from "../../navigation/NavigationService";
+} from '../../common/AppText';
+import { useSelector } from 'react-redux';
+import InputBox from '../../common/InputBox';
+import { RootState } from '../../libs/rootReducer';
+import { scan, copy, downArrow, done, kycLogo, panIcon, bankIcon, upiIcon, checkAdhaar, panIconUpload, greenmark, adhaarIcon, passportIcon, votericon, dlicon, callIcon } from '../../helper/image';
+import FastImage from 'react-native-fast-image';
+import { phone, email, bank, panCard } from '../../helper/image';
+import { universalPaddingHorizontal } from '../../theme/dimens';
+import SecondaryButton from '../../common/secondaryButton';
+import NavigationService from '../../navigation/NavigationService';
 import {
   MY_BALANCE,
+  UPLOAD_SELFIE,
   VERIFY_ADHAAR_SCREEN,
   VERIFY_BANK_SCREEN,
   VERIFY_DL,
@@ -60,418 +42,333 @@ import {
   VERIFY_UPI,
   VERIFY_VOTER_ID,
   WITHDRAW_SCREEN,
-} from "../../navigation/routes";
-import { TouchableOpacityView } from "../../common/TouchableOpacityView";
-import PrimaryButton from "../../common/primaryButton";
-import { toastAlert } from "../../helper/utility";
-import { NewColor, colors } from "../../theme/color";
-// import { Colors } from 'react-native/Libraries/NewAppScreen';
+} from '../../navigation/routes';
+import { TouchableOpacityView } from '../../common/TouchableOpacityView';
+import PrimaryButton from '../../common/primaryButton';
+import { toastAlert } from '../../helper/utility';
+import { NewColor, colors } from '../../theme/color';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
+// import Secondary from '../../common/secondaryButton';
+import { fontFamilyPoppins } from '../../theme/typography';
 
 const KYC = () => {
-  const [visible, setIsVisible] = useState("");
+  const [visible, setIsVisible] = useState('');
   const [topTrue, setTopTrue] = useState(false);
   const [bottomTrue, setBottomTrue] = useState(false);
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const [select, setSelect] = useState("");
-  // const colors = useSelector((state: RootState) => {
+  const [isModalVisible, setIsModalVisible] = useState(false)
+  const [select, setSelect] = useState('')
+  // const colors = useSelector((state) => {
   //   return state.theme.colors;
   // });
-  const kycDetails = useSelector((state) => {
+  const kycDetails = useSelector(state => {
     return state.profile.kycDetails;
   });
+  const userData = useSelector(state => {
+    return state.profile.userData;
+  });
+
+  console.log(kycDetails, "kycDetails")
   const data = [
     {
       id: 1,
-      title: "Bank Account",
+      title: 'Bank Account',
       image: bankIcon,
     },
     {
       id: 2,
-      title: "UPI",
+      title: 'UPI',
       image: upiIcon,
     },
+  ]
+  const DATA = [
+    {
+      id: '0',
+      source: callIcon,
+      heading: 'Mobile Number',
+      subHeading: `+91 ${userData?.mobile_number}`,
+      type: 'Verified',
+    },
+    // {
+    //   id: '1',
+    //   source: passportIcon,
+    //   heading: 'Email Address',
+    //   subHeading: 'To get latest information',
+    //   type: 'notVerified',
+    // },
+    {
+      id: '2',
+      source: adhaarIcon,
+      heading: 'Aadhaar card',
+      subHeading: 'For safety ans security of all transactions.',
+      type: 'notVerified',
+    },
+    {
+      id: '3',
+      source: dlicon,
+      heading: 'PAN Card',
+      subHeading: 'For safety ans security of all transactions.',
+      type: 'notVerified',
+    },
+    {
+      id: '4',
+      source: bankIcon,
+      heading: 'Bank Account',
+      subHeading: 'For withdrawals to your bank account.',
+      type: 'notVerified',
+    },
+    // {
+    //   id: '5',
+    //   source: votericon,
+    //   heading: 'Upload Selfie',
+    //   subHeading: 'For withdrawals to your bank account.',
+    //   type: 'notVerified',
+    // },
   ];
 
-  const isVerified = (id) => {
-    if (id == "PAN") {
-      return kycDetails?.pan_verified == 1;
-    } else if (id == "EMAIL") {
+  const isVerified = id => {
+    if (id == 0) {
+      return kycDetails?.mobile_verified == 1;
+    } else if (id == 1) {
       return kycDetails?.email_verified == 1;
+    } else if (id == 3) {
+      return kycDetails?.pan_verified == 1;
+    } else if (id == 4) {
+      return kycDetails?.bank_verified == 1;
+    } else if (id == 2) {
+      return kycDetails?.adhar_verified == 1;
     }
   };
-  const newCheck =
-    kycDetails?.pan_verified == 1 &&
-    kycDetails?.email_verified == 1 &&
-    (kycDetails?.upi_verified == 1 || kycDetails?.bank_verified == 1);
 
-  useEffect(() => {
-    if (newCheck) {
-      setIsModalVisible(true);
-    }
-  }, [kycDetails]);
-
-  const checkInProgress = (id) => {
-    if (id == "PAN") {
-      return kycDetails?.pan_verified == 2;
-    } else if (id == "EMAIL") {
+  const checkInProgress = id => {
+    if (id == 1) {
       return kycDetails?.email_verified == 2;
+    } else if (id == 3) {
+      return kycDetails?.pan_verified == 2;
+    } else if (id == 4) {
+      return kycDetails?.bank_verified == 2;
+    } else if (id == 2) {
+      return kycDetails?.adhar_verified == 2;
     }
   };
-  const renderItemTwo = (item) => {
-    return (
-      <TouchableOpacityView
-        onPress={() => setSelect(item.id)}
-        style={styles.renderContainer}
-      >
-        <View style={[styles.underContainer, {}]}>
-          <View style={styles.pancardlayerview}>
-            <FastImage
-              source={item.image}
-              resizeMode="contain"
-              style={styles.renderImage}
-            />
-          </View>
-          <AppText
-            type={FORTEEN}
-            weight={POPPINS_SEMI_BOLD}
-            style={{ marginLeft: 10 }}
-          >
-            {item.title}
-          </AppText>
-        </View>
-        <View style={styles.tickContainer}>
-          {select == item.id ? <View style={styles.tick} /> : <></>}
-        </View>
-      </TouchableOpacityView>
-    );
-  };
+  // const newCheck = (kycDetails?.pan_verified == 1 && kycDetails?.email_verified == 1) && (kycDetails?.upi_verified == 1 || kycDetails?.bank_verified == 1)
+
+  // useEffect(() => {
+  //   if (newCheck) {
+  //     setIsModalVisible(true)
+  //   }
+  // }, [kycDetails])
+
   const onSubmit = () => {
     if (select == 1) {
-      NavigationService.navigate(VERIFY_BANK_SCREEN);
+      NavigationService.navigate(VERIFY_BANK_SCREEN)
     } else {
-      NavigationService.navigate(VERIFY_UPI);
+      NavigationService.navigate(VERIFY_UPI)
     }
+  }
+  // console.log(kycDetails, 'kycDetails');
+  const onPressAction = item => {
+    if (item.id == '1') return NavigationService.navigate(VERIFY_EMAIL_SCREEN);
+    if (item.id == '2') return NavigationService.navigate(VERIFY_ADHAAR_SCREEN);
+    if (item.id == '3') return NavigationService.navigate(VERIFY_PAN_SCREEN);
+    if (item.id == '4') {
+      if(kycDetails?.pan_verified === 0) {
+        toastAlert.showToastError("Please Verify Pan Card First");
+        return;
+      }
+      return NavigationService.navigate(VERIFY_BANK_SCREEN)
+    };
+
+  };
+  const renderItem = ({ item }) => {
+    return (
+      <View key={item.id} style={styles.box}>
+        <View style={[styles.topContainer]}>
+          <View
+            style={{
+              flexDirection: 'row',
+              flex: 1,
+              alignItems: 'center',
+              justifyContent: 'space-between',
+            }}>
+            <View style={styles.phoneContainer}>
+              <FastImage
+                source={item.source}
+                resizeMode="contain"
+                style={styles.phone}
+                tintColor={colors.redText}
+              />
+            </View>
+            <View style={[styles.mobileContainer, { flex: 1 }]}>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  flex: 1,
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                }}>
+                <View style={{ width: '60%' }}>
+                  <AppText
+                    type={TWELVE}
+                    color={BLACK}
+                    style={[styles.mobile, { marginTop: 5 }]}>
+                    {item.heading}
+                  </AppText>
+                  <AppText
+                    type={TEN}
+                    numberOfLines={1}
+                    style={[styles.mobile, { flex: 1 }]}>
+                    {item.subHeading}
+                  </AppText>
+                </View>
+
+                {isVerified(item?.id) || item.id == 0 ? (
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      justifyContent: 'space-around',
+                      alignSelf: 'center',
+                      // marginLeft: 15,
+                      paddingVertical: 3,
+                      paddingHorizontal: 6,
+                      borderRadius: 5,
+                      right: 11,
+                      borderWidth: 1,
+                      borderColor: 'rgba(0, 184, 28, 1)',
+                    }}>
+                    <AppText
+                      weight={SEMI_BOLD}
+                      style={{
+                        color: 'rgba(0, 184, 28, 1)',
+                        fontSize: 11,
+                        fontWeight: '500',
+                        alignContent: 'center',
+                        right: 2,
+                      }}>
+                      Verified
+                    </AppText>
+                    <FastImage
+                      source={greenmark}
+                      resizeMode="contain"
+                      style={{ height: 6, width: 9, alignSelf: 'center' }}
+                    />
+                  </View>
+                ) : checkInProgress(item?.id) ? (
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      justifyContent: 'space-around',
+                      alignSelf: 'center',
+                      // marginLeft: 15,
+                      paddingVertical: 3,
+                      paddingHorizontal: 6,
+                      borderRadius: 5,
+                      right: 11,
+                      borderWidth: 1,
+                      borderColor: colors.redText,
+                    }}>
+                    <AppText
+                      weight={SEMI_BOLD}
+                      style={{
+                        color: colors.black,
+                        fontSize: 10,
+                        fontWeight: '500',
+                        alignContent: 'center',
+                      }}
+                      /* style={styles.verified} */>
+                      In Process
+                    </AppText>
+                  </View>
+                ) : (
+                  <SecondaryButton
+                    title="Verify"
+                    onPress={() => onPressAction(item)}
+                    buttonStyle={styles.editButton}
+                    titleStyle={styles.editButtonTitle}
+                    buttonViewStyle={{ height: 30 }}
+                  />
+                )}
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    );
   };
   return (
-    <AppSafeAreaView
-      hidden={false}
-      statusColor={true}
-      light={true}
-      style={{ backgroundColor: "#F8F8F8" }}
-    >
+    <AppSafeAreaView hidden={false}>
       <StatusBar
-        backgroundColor={"transparent"}
+        backgroundColor={'transparent'}
         translucent={true}
         networkActivityIndicatorVisible={true}
       />
-      <Header
-        commonHeader
-        title="Verification"
-        style={{ padding: universalPaddingHorizontal }}
-      />
       <CommonImageBackground common>
+        <Header
+          commonHeader
+          title="Verification"
+          style={{ padding: universalPaddingHorizontal, marginTop: '10%' }}
+        />
         <KeyBoardAware style={styles.bottomContainer}>
-          <FastImage
-            source={kycLogo}
-            resizeMode="contain"
-            style={styles.kycLogoS}
-          />
-          {/* <AppText style={[styles.headerText, { marginTop: '10%' }]} type={SIXTEEN} weight={POPPINS_SEMI_BOLD}>
+          <AppText style={[styles.headerText]} type={SIXTEEN} weight={POPPINS_SEMI_BOLD}>
             Let’s verify KYC
-          </AppText> */}
-          <AppText
-            style={styles.headerText}
-            type={THIRTEEN}
-            weight={POPPINS_SEMI_BOLD}
-            color={BLACKOPACITY}
-          >
-            {
-              "Please submit the following documents \nfor the verification process"
-            }
           </AppText>
-          <AppText
-            weight={POPPINS_MEDIUM}
-            type={FORTEEN}
-            style={styles.getVerified}
-          >
-            Document Verification
-          </AppText>
-          <TouchableOpacityView
-            onPress={() =>
-              isVerified("PAN")
-                ? toastAlert.showToastError("Your pan have been Verfied")
-                : checkInProgress("PAN")
-                ? toastAlert.showToastError("Your pan have been progress")
-                : NavigationService.navigate(VERIFY_PAN_SCREEN)
-            }
-            style={styles.panContainer}
-          >
-            <View style={styles.underContainer}>
-              <View style={styles.pancardlayerview}>
-                <FastImage
-                  source={panIcon}
-                  resizeMode="contain"
-                  style={styles.renderImage}
-                />
-              </View>
-              <AppText
-                type={THIRTEEN}
-                weight={POPPINS_MEDIUM}
-                style={{ marginLeft: 10 }}
-              >
-                Pan Card
-              </AppText>
-            </View>
-            {isVerified("PAN") ? (
-              <FastImage
-                source={checkAdhaar}
-                resizeMode="contain"
-                style={styles.checkIcon}
-              />
-            ) : checkInProgress("PAN") ? (
-              <AppText type={THIRTEEN} weight={POPPINS_SEMI_BOLD} color={RED}>
-                In Progress
-              </AppText>
-            ) : (
-              <SecondaryButton
-                type={ELEVEN}
-                title="Verify"
-                buttonViewStyle={{backgroundColor: colors.redText, borderRadius: 10}}
-                buttonStyle={[styles.buttonStyle]}
-                onPress={() => NavigationService.navigate(VERIFY_PAN_SCREEN)}
-              />
-            )}
-          </TouchableOpacityView>
-          <AppText
-            weight={POPPINS_MEDIUM}
-            type={FORTEEN}
-            style={styles.getVerified}
-          >
-            Email Verification
-          </AppText>
-          <TouchableOpacityView
-            onPress={() =>
-              isVerified("EMAIL")
-                ? toastAlert.showToastError("Your email have been Verfied")
-                : checkInProgress("EMAIL")
-                ? toastAlert.showToastError("Your email have been progress")
-                : NavigationService.navigate(VERIFY_EMAIL_SCREEN)
-            }
-            style={styles.panContainer}
-          >
-            <View style={styles.underContainer}>
-              <View style={styles.pancardlayerview}>
-                <FastImage
-                  source={panIcon}
-                  resizeMode="contain"
-                  style={styles.renderImage}
-                />
-              </View>
-              <AppText
-                type={THIRTEEN}
-                weight={POPPINS_MEDIUM}
-                style={{ marginLeft: 10 }}
-              >
-                Email
-              </AppText>
-            </View>
-            {isVerified("EMAIL") ? (
-              <FastImage
-                source={checkAdhaar}
-                resizeMode="contain"
-                style={styles.checkIcon}
-              />
-            ) : checkInProgress("EMAIL") ? (
-              <AppText type={THIRTEEN} weight={POPPINS_SEMI_BOLD} color={RED}>
-                In Progress
-              </AppText>
-            ) : (
-              <SecondaryButton
-              type={ELEVEN}
-              title="Verify"
-              buttonViewStyle={{backgroundColor: colors.redText, borderRadius: 10}}
-              buttonStyle={[styles.buttonStyle]}
-              onPress={() => NavigationService.navigate(VERIFY_EMAIL_SCREEN)}
-            />
-            )}
-          </TouchableOpacityView>
-          <AppText
-            style={{ marginTop: 10, marginBottom: 10 }}
-            weight={POPPINS_MEDIUM}
-            type={FORTEEN}
-          >
-            Withdrawal Account verification
-          </AppText>
-          {data?.map((item) => {
-            return renderItemTwo(item);
+          {DATA.map((item, index) => {
+            return renderItem({ item });
           })}
         </KeyBoardAware>
-        {select ? (
-          <View style={{ paddingHorizontal: universalPaddingHorizontal }}>
-            <PrimaryButton
-              buttonStyle={styles.buttonTwo}
-              title={select == 1 ? "Add Bank" : "Add UPI"}
-              onPress={onSubmit}
-            />
-          </View>
-        ) : (
-          <></>
-        )}
-        <Modal
-          animationType="fade"
-          transparent={true}
-          visible={false}
-          onRequestClose={() => {
-            setIsModalVisible(!isModalVisible);
-          }}
-        >
-          <View style={styles.centeredView}>
-            <View style={styles.modalContainer}>
-              <View style={styles.modalTopSection}>
-                <AppText type={SIXTEEN} weight={POPPINS_SEMI_BOLD}>
-                  Your KYC Completed
-                </AppText>
-              </View>
-              <FastImage
-                source={done}
-                resizeMode="contain"
-                style={{ height: 60, width: 60, alignSelf: "center" }}
-              />
-              <PrimaryButton
-                onPress={() => {
-                  setIsModalVisible(false),
-                    NavigationService.navigate(MY_BALANCE);
-                }}
-                buttonStyle={{
-                  marginTop: 10,
-                  alignSelf: "center",
-                  width: "90%",
-                }}
-                title="WITHDRAWAL"
-              />
-            </View>
-          </View>
-        </Modal>
       </CommonImageBackground>
     </AppSafeAreaView>
   );
 };
 
 export default KYC;
-
 const styles = StyleSheet.create({
   bottomContainer: {
     paddingHorizontal: universalPaddingHorizontal,
   },
-  kycLogoS: {
-    width: 223,
-    height: 222,
-    alignSelf: "center",
-    marginTop: 20,
-  },
   headerText: {
-    textAlign: "center",
+    marginTop: 10
   },
-  getVerified: {
-    marginTop: 20,
-    marginBottom: 10,
+  topContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
-  panContainer: {
-    paddingHorizontal: 1,
-    borderRadius: 10,
-    borderWidth: 1,
-    // borderColor: '#002E612B',
-    backgroundColor: colors.bottomBackgroundColor,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    height: 46,
+  mobile: {
+    marginLeft: 10,
   },
-  underContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  renderImage: {
-    height: 20,
-    width: 20,
-    // marginLeft:,
-    left: -1,
-  },
-  checkIcon: {
-    height: 20,
-    width: 20,
-    marginRight: 10,
-  },
-  buttonStyle: {
-    marginHorizontal: 5,
-    width: 66,
-    // height: 21
-  },
-  buttonTwo: {
-    marginTop: 30,
-    marginBottom: 20,
-  },
-  centeredView: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: NewColor.linerBlacklight,
-  },
-  modalContainer: {
-    width: Dimensions.get("window").width - 20,
-    // height: 243,
-    backgroundColor: colors.bottomBackgroundColor,
-    borderRadius: 16,
-    overflow: "hidden",
-    // justifyContent: 'space-between',
-    paddingBottom: 20,
-  },
-  modalTopSection: {
-    height: 54,
-    backgroundColor: NewColor.linerBlackFive,
-    justifyContent: "center",
-    alignItems: "center",
-    position: "relative",
-    marginBottom: 10,
-  },
-  renderContainer: {
-    // borderWidth: 1,
-    backgroundColor: colors.bottomBackgroundColor,
-    paddingHorizontal: 1,
-    height: 46,
-    marginBottom: 10,
-    borderRadius: 10,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-  },
-  tickContainer: {
-    borderRadius: 50,
-    borderWidth: 2,
-    borderColor: colors.borderBackColor,
-    height: 20,
-    width: 20,
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: 10,
-  },
-  tick: {
-    height: 10,
-    width: 10,
-    backgroundColor: colors.borderPick,
-    borderRadius: 50,
-  },
-  pancardlayerview: {
-    height: 40,
-    width: 40,
+  phoneContainer: {
+    backgroundColor: colors.white,
+    height: 45,
+    width: 45,
     marginHorizontal: 3,
     marginVertical: 3,
     borderRadius: 10,
-    alignItems: "center",
-    justifyContent: "center",
-    // alignContent:"center",
-    // alignSelf:"center",
-    backgroundColor: NewColor.linerLightBlueTwinty,
-    // right:2
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  mobileContainer: {
+    justifyContent: 'center',
+  },
+  box: {
+    borderWidth: 1,
+    borderColor: 'rgba(63, 139, 238, 0.3)',
+    borderRadius: 8,
+    marginTop: 10,
+    backgroundColor: "rgba(255, 255, 255, 0.4)"
+  },
+  editButton: { width: 70, alignSelf: 'center', marginHorizontal: 10, borderWidth: 1, borderColor: colors.redText },
+  editButtonTitle: {
+    fontSize: 12,
+    fontFamily: fontFamilyPoppins,
+    color: colors.redText
+  },
+  phone: {
+    height: 20,
+    width: 20,
+  },
+  verified: {
+    color: colors.green,
+    alignSelf: 'center',
+    marginLeft: 15,
+    right: 5,
   },
 });

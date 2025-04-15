@@ -9,66 +9,66 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:3:5-67
-11-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:3:22-64
+11-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:3:5-67
+11-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:3:22-64
 12    <uses-permission android:name="android.permission.CAMERA" />
-12-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:4:4-64
-12-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:4:21-61
+12-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:4:4-64
+12-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:4:21-61
 13
 14    <uses-feature
-14-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:5:4-84
+14-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:5:4-84
 15        android:name="android.hardware.camera"
-15-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:5:18-56
+15-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:5:18-56
 16        android:required="false" />
-16-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:5:57-81
+16-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:5:57-81
 17    <uses-feature
-17-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:6:4-90
+17-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:6:4-90
 18        android:name="android.hardware.camera.front"
-18-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:6:18-62
+18-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:6:18-62
 19        android:required="false" />
-19-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:6:63-87
+19-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:6:63-87
 20
 21    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-21-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:7:4-75
-21-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:7:21-72
+21-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:7:4-75
+21-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:7:21-72
 22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-22-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:8:4-78
-22-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:8:21-75
+22-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:8:4-78
+22-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:8:21-75
 23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-23-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:9:4-80
-23-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:9:21-77
+23-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:9:4-80
+23-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:9:21-77
 24    <uses-permission
-24-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:10:4-107
+24-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:10:4-107
 25        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-25-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:10:21-77
+25-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:10:21-77
 26        android:maxSdkVersion="29" />
-26-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:10:78-104
+26-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:10:78-104
 27    <uses-permission
-27-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:11:4-106
+27-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:11:4-106
 28        android:name="android.permission.READ_EXTERNAL_STORAGE"
-28-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:11:21-76
+28-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:11:21-76
 29        android:maxSdkVersion="32" />
-29-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:11:77-103
+29-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:11:77-103
 30    <uses-permission android:name="android.permission.READ_SMS" />
-30-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:12:4-66
-30-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:12:21-63
+30-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:12:4-66
+30-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:12:21-63
 31    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-31-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:13:4-69
-31-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:13:21-66
+31-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:13:4-69
+31-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:13:21-66
 32    <uses-permission android:name="android.permission.WAKE_LOCK" />
-32-->[:react-native-firebase_dynamic-links] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/dynamic-links/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:5-68
-32-->[:react-native-firebase_dynamic-links] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/dynamic-links/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:22-65
+32-->[:react-native-firebase_dynamic-links] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/dynamic-links/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:5-68
+32-->[:react-native-firebase_dynamic-links] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/dynamic-links/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:22-65
 33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-33-->[:react-native-firebase_dynamic-links] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/dynamic-links/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-79
-33-->[:react-native-firebase_dynamic-links] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/dynamic-links/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-76
+33-->[:react-native-firebase_dynamic-links] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/dynamic-links/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-79
+33-->[:react-native-firebase_dynamic-links] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/dynamic-links/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-76
 34
 35    <queries>
-35-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:7:5-11:15
+35-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:7:5-11:15
 36        <intent>
-36-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-10:18
+36-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-10:18
 37            <action android:name="android.media.action.IMAGE_CAPTURE" />
-37-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-73
-37-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:21-70
+37-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-73
+37-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:21-70
 38        </intent>
 39    </queries>
 40
@@ -156,132 +156,132 @@
 73-->[me.leolin:ShortcutBadger:1.1.22] /Users/purushottamrathore/.gradle/caches/transforms-3/33baa9f95b060905f1864947b1f2f57a/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
 74
 75    <application
-75-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:15:5-37:19
+75-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:15:5-37:19
 76        android:name="com.Over11.MainApplication"
-76-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:16:7-38
+76-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:16:7-38
 77        android:allowBackup="false"
-77-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:20:7-34
+77-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:20:7-34
 78        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 78-->[androidx.core:core:1.9.0] /Users/purushottamrathore/.gradle/caches/transforms-3/131a14e650442bdc8d41eaaa9e5b4d34/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 79        android:extractNativeLibs="true"
 80        android:icon="@mipmap/appicon"
-80-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:18:7-37
+80-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:18:7-37
 81        android:label="@string/app_name"
-81-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:17:7-39
+81-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:17:7-39
 82        android:roundIcon="@mipmap/appicon"
-82-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:19:7-42
+82-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:19:7-42
 83        android:theme="@style/AppTheme"
-83-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:21:7-38
+83-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:21:7-38
 84        android:usesCleartextTraffic="true" >
-84-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:22:7-42
+84-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:22:7-42
 85        <activity
-85-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:23:7-34:18
+85-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:23:7-34:18
 86            android:name="com.Over11.MainActivity"
-86-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:24:9-37
+86-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:24:9-37
 87            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-87-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:26:9-118
+87-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:26:9-118
 88            android:exported="true"
-88-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:29:9-32
+88-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:29:9-32
 89            android:label="@string/app_name"
-89-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:25:9-41
+89-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:25:9-41
 90            android:launchMode="singleTask"
-90-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:27:9-40
+90-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:27:9-40
 91            android:windowSoftInputMode="adjustResize" >
-91-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:28:9-51
+91-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:28:9-51
 92            <intent-filter>
-92-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:30:9-33:25
+92-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:30:9-33:25
 93                <action android:name="android.intent.action.MAIN" />
-93-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:31:13-65
-93-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:31:21-62
+93-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:31:13-65
+93-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:31:21-62
 94
 95                <category android:name="android.intent.category.LAUNCHER" />
-95-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:32:13-73
-95-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:32:23-70
+95-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:32:13-73
+95-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:32:23-70
 96            </intent-filter>
 97        </activity>
 98
 99        <meta-data
-99-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:35:7-36:44
+99-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:35:7-36:44
 100            android:name="com.dieam.reactnativepushnotification.notification_foreground"
-100-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:35:19-95
+100-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:35:19-95
 101            android:value="false" />
-101-->/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app/src/main/AndroidManifest.xml:36:21-42
+101-->/Users/purushottamrathore/AppinopWorkspace/over11/android/app/src/main/AndroidManifest.xml:36:21-42
 102
 103        <service
-103-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-14:40
+103-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-14:40
 104            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"
-104-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-103
+104-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-103
 105            android:exported="false" />
-105-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-37
+105-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-37
 106        <service
-106-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-21:19
+106-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-21:19
 107            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
-107-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-95
+107-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-95
 108            android:exported="false" >
-108-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-37
+108-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-37
 109            <intent-filter>
-109-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
+109-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
 110                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-110-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
-110-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
+110-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
+110-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
 111            </intent-filter>
 112        </service>
 113
 114        <receiver
-114-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-30:20
+114-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-30:20
 115            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
-115-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-96
+115-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-96
 116            android:exported="true"
-116-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-36
+116-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-36
 117            android:permission="com.google.android.c2dm.permission.SEND" >
-117-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-73
+117-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-73
 118            <intent-filter>
-118-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+118-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
 119                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-119-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
-119-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+119-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+119-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
 120            </intent-filter>
 121        </receiver>
 122
 123        <meta-data
-123-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:9-34:36
+123-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:9-34:36
 124            android:name="firebase_messaging_auto_init_enabled"
-124-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-64
+124-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-64
 125            android:value="true" />
-125-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:13-33
+125-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:13-33
 126        <meta-data
-126-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-37:32
+126-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-37:32
 127            android:name="com.google.firebase.messaging.default_notification_channel_id"
-127-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-89
+127-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-89
 128            android:value="" />
-128-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-29
+128-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-29
 129        <meta-data
-129-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:9-40:47
+129-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:9-40:47
 130            android:name="com.google.firebase.messaging.default_notification_color"
-130-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:39:13-84
+130-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:39:13-84
 131            android:resource="@color/white" />
-131-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:40:13-44
+131-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:40:13-44
 132        <meta-data
-132-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:9-11:36
+132-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:9-11:36
 133            android:name="app_data_collection_default_enabled"
-133-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-63
+133-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-63
 134            android:value="true" />
-134-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-33
+134-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-33
 135
 136        <service
-136-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-21:19
+136-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-21:19
 137            android:name="com.google.firebase.components.ComponentDiscoveryService"
-137-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-84
+137-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-84
 138            android:directBootAware="true"
-138-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-43
+138-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-43
 139            android:exported="false" >
-139-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
+139-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
 140            <meta-data
-140-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:85
+140-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:85
 141                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
-141-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-120
+141-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-120
 142                android:value="com.google.firebase.components.ComponentRegistrar" />
-142-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:17-82
+142-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:17-82
 143            <meta-data
 143-->[com.google.firebase:firebase-messaging:23.4.1] /Users/purushottamrathore/.gradle/caches/transforms-3/42141c13a80777e90ae8d420bf0f4283/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:57:13-59:85
 144                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
@@ -345,56 +345,56 @@
 173        </service>
 174
 175        <provider
-175-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-27:38
+175-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-27:38
 176            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
-176-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-88
+176-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-88
 177            android:authorities="com.Over11.reactnativefirebaseappinitprovider"
-177-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-86
+177-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-86
 178            android:exported="false"
-178-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-37
+178-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-37
 179            android:initOrder="99" />
-179-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-35
+179-->[:react-native-firebase_app] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-35
 180        <provider
-180-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-24:20
+180-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-24:20
 181            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
-181-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-94
+181-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-94
 182            android:authorities="com.Over11.provider"
-182-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-60
+182-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-60
 183            android:exported="false"
-183-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-37
+183-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-37
 184            android:grantUriPermissions="true" >
-184-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-47
+184-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-47
 185            <meta-data
-185-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:78
+185-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:78
 186                android:name="android.support.FILE_PROVIDER_PATHS"
-186-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-67
+186-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-67
 187                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
-187-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:17-75
+187-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:17-75
 188        </provider>
 189
 190        <activity
-190-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-28:72
+190-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-28:72
 191            android:name="com.yalantis.ucrop.UCropActivity"
-191-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-60
+191-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-60
 192            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-192-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-69
+192-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-69
 193
 194        <provider
-194-->[:react-native-webview] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-16:20
+194-->[:react-native-webview] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-16:20
 195            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-195-->[:react-native-webview] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-83
+195-->[:react-native-webview] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-83
 196            android:authorities="com.Over11.fileprovider"
-196-->[:react-native-webview] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-64
+196-->[:react-native-webview] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-64
 197            android:exported="false"
-197-->[:react-native-webview] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-37
+197-->[:react-native-webview] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-37
 198            android:grantUriPermissions="true" >
-198-->[:react-native-webview] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-47
+198-->[:react-native-webview] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-47
 199            <meta-data
-199-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:78
+199-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:78
 200                android:name="android.support.FILE_PROVIDER_PATHS"
-200-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-67
+200-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-67
 201                android:resource="@xml/file_provider_paths" />
-201-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:17-75
+201-->[:react-native-image-crop-picker] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:17-75
 202        </provider>
 203
 204        <receiver
@@ -406,10 +406,10 @@
 207            android:permission="com.google.android.c2dm.permission.SEND" >
 207-->[com.google.firebase:firebase-messaging:23.4.1] /Users/purushottamrathore/.gradle/caches/transforms-3/42141c13a80777e90ae8d420bf0f4283/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:32:13-73
 208            <intent-filter>
-208-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+208-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
 209                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-209-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
-209-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+209-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+209-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
 210            </intent-filter>
 211
 212            <meta-data
@@ -432,10 +432,10 @@
 223            android:exported="false" >
 223-->[com.google.firebase:firebase-messaging:23.4.1] /Users/purushottamrathore/.gradle/caches/transforms-3/42141c13a80777e90ae8d420bf0f4283/transformed/jetified-firebase-messaging-23.4.1/AndroidManifest.xml:49:13-37
 224            <intent-filter android:priority="-500" >
-224-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
+224-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
 225                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-225-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
-225-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
+225-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
+225-->[:react-native-firebase_messaging] /Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
 226            </intent-filter>
 227        </service>
 228

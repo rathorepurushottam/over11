@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
           borderRightColor: "#A91515",
           borderBottomColor: "#A91515",
           borderBottomWidth: 2,
-          borderBottomRightRadius: 10,
-          borderBottomLeftRadius: 4,
+          borderBottomRightRadius: 12,
+          borderBottomLeftRadius: 5,
           borderTopRightRadius: 4,
   },
   linearGradientWrapper: {

@@ -63,8 +63,9 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
         start={{ x: 1, y: 1 }}
         end={{ x: 1, y: 0 }}
         style={styles.topContainer}>
+          <View style={{flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: "5%", width: "60%"}}>
         <TouchableOpacityView
-          style={{ height: 28, width: 28, marginTop: "5%" }}
+          style={{ height: 30, width: 30, marginTop: "5%" }}
           onPress={personClick}>
           <FastImage
             resizeMode="contain"
@@ -79,14 +80,18 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
             <FastImage
               source={ThreeIcon}
               resizeMode='contain'
-              style={{ height: 10, width: 10 }} />
+              style={{ height: 12, width: 12 }} />
           </View>
         </TouchableOpacityView>
+        <View style={{ marginTop: "6%" }}>
         <FastImage
           source={Over11HeaderLogo}
           style={styles.combineIcon}
           resizeMode="contain"
         />
+        </View>
+        </View>
+            <View style={{flexDirection: "row", justifyContent: "space-around", alignItems: "center", marginTop: "5%", width: "40%"}}>
         <TouchableOpacityView
           style={{ marginTop: "6%" }}
           onPress={() => NavigationService.navigate(MY_BALANCE)}>
@@ -126,6 +131,7 @@ const HomeTopHeader = ({ personClick, walletIcon }) => {
             style={styles.notificationIcon}
           />
         </TouchableOpacityView>
+        </View>
       </LinearGradient>
     </>
   );
@@ -140,23 +146,23 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent:"space-between",
-    paddingTop: 10
+    paddingTop: 10,
   },
   personImage: {
-    height: 28,
-    width: 28,
+    height: 30,
+    width: 30,
     borderRadius: 100,
   },
   combineIcon: {
     height: 40,
     width: 150,
-    marginLeft: 40,
-    marginTop: "8%"
+    // marginLeft: 80,
+    // marginTop: "8%"
   },
   notificationIcon: {
     height: 28,
     width: 28,
-    // right: 25
+    // marginRight: 5
   },
   topBar: {
     flexDirection: 'row',
@@ -169,7 +175,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: 2,
     height: 30,
-    width: 80,
+    width: 70,
     borderWidth: 1,
     borderColor:NLCColor.lightPink,
     marginLeft: 20,
@@ -202,9 +208,9 @@ const styles = StyleSheet.create({
   notifiView: {
     height: 28,
     with: 28,
-    marginTop: 20,
-    marginRight: 5,
-    marginLeft: 10,
+    marginTop: 5,
+    // marginRight: 5,
+    // marginLeft: 10,
     // backgroundColor: 'black',
     // borderWidth: 1
   }

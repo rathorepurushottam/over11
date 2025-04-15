@@ -1,6 +1,6 @@
 <lint-module
     format="1"
-    dir="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android/app"
+    dir="/Users/purushottamrathore/AppinopWorkspace/over11/android/app"
     name=":app"
     type="APP"
     maven="Over11:app:"

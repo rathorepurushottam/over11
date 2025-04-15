@@ -4,7 +4,7 @@
             "outputFile": "com.Over11.app-mergeReleaseResources-44:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/datetimepicker/android/build/intermediates/packaged_res/release/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/datetimepicker/android/build/intermediates/packaged_res/release/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,5",
                         "startColumns": "4,4",

@@ -38,8 +38,9 @@ export const RenderTabBar = (props: any) => {
               flexDirection: 'column',
               width: '100%',
               height: 38,
-              justifyContent: 'space-evenly',
+              // justifyContent: 'space-evenly',
               padding: 5,
+              paddingHorizontal: 8
               // alignItems: ,
               // backgroundColor: "red"
             }}>
@@ -265,7 +266,7 @@ const SlideSwiper = ({tabTitles, reverseData}: any) => {
       renderTabBar={props => (
         <RenderTabBar
           {...props}
-          // style={{}}
+          style={{marginLeft: 10}}
         />
       )}
     />

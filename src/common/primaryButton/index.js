@@ -31,31 +31,29 @@ const PrimaryButton = ({
       style={buttonStyle}
       onPress={onPress}
     >
-      
       <View style={[styles.linearGradient, smallBtn]}>
-      <View
-        style={{
-         borderWidth: 2,
-    borderColor: '#A91515',
-          alignItems: 'center',
-    justifyContent: 'center',
-          marginBottom: 2,
-          marginRight: 2,
-          borderRadius: 10,
-          height: 50,
-        }}
-      >
-        <AppText
-          type={type ? type : SIXTEEN}
-          weight={POPPINS_BOLD}
-          color={REDTEXT}
-          style={[styles.buttonText, titleStyle]}
+        <View
+          style={{
+            borderWidth: 2,
+            borderColor: "#A91515",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: 2,
+            marginRight: 2,
+            borderRadius: 10,
+            height: 50,
+          }}
         >
-          {title}
-        </AppText>
+          <AppText
+            type={type ? type : SIXTEEN}
+            weight={POPPINS_BOLD}
+            color={REDTEXT}
+            style={[styles.buttonText, titleStyle]}
+          >
+            {title}
+          </AppText>
         </View>
       </View>
-     
     </TouchableOpacityView>
   );
 };

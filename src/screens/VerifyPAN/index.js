@@ -9,6 +9,7 @@ import {
   BLACK,
   BLACKOPACITY,
   FORTEEN,
+  GRY,
   POPPINS_MEDIUM,
   POPPINS_SEMI_BOLD,
   THIRTEEN,
@@ -167,7 +168,7 @@ const VerifyPAN = () => {
           </View> */}
           <View style={styles.box}>
             <View>
-              <AppText type={FORTEEN} weight={POPPINS_SEMI_BOLD}>
+              <AppText type={FORTEEN} weight={POPPINS_SEMI_BOLD} color={BLACK}>
                 Enter your Pan number
               </AppText>
               <FastImage source={recommendedIcon} resizeMode='contain' style={styles.recommended} />
@@ -176,7 +177,7 @@ const VerifyPAN = () => {
               <TextInput
                 allowFontScaling={false}
                 placeholder={'Pan Number'}
-                placeholderTextColor={colors.white}
+                placeholderTextColor={colors.grey}
                 style={styles.inputStyle}
                 value={pan}
                 onChangeText={(value) => setPan(value)}
@@ -190,7 +191,7 @@ const VerifyPAN = () => {
               <TextInput
                 allowFontScaling={false}
                 placeholder={'Pan Card Holder Name '}
-                placeholderTextColor={colors.white}
+                placeholderTextColor={colors.grey}
                 style={styles.inputStyle}
                 value={name}
                 onChangeText={(value) => setName(value)}
@@ -199,7 +200,7 @@ const VerifyPAN = () => {
             <TouchableOpacityView
               onPress={() => serIsDatePickerVisible(true)}
               style={styles.inputContainer}>
-              <AppText type={THIRTEEN} weight={POPPINS_SEMI_BOLD} color={dob ? WHITE : WHITE}>
+              <AppText type={THIRTEEN} weight={POPPINS_SEMI_BOLD} color={dob ? BLACK : GRY}>
                 {dob ? dob : 'Date of birth'}
               </AppText>
               <FastImage source={calanderIcon} resizeMode='contain' style={styles.checkIcon} tintColor={colors.white} />
@@ -267,7 +268,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: poppinsSemiBold,
     flex: 1,
-    color: colors.white
+    color: colors.black
   },
   checkIcon: {
     height: 20,

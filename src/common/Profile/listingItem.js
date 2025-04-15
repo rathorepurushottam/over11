@@ -2,12 +2,14 @@ import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import {AppText, ELEVEN, FOURTEEN, POPPINS, POPPINS_MEDIUM, POPPINS_SEMI_BOLD, TWENTY_FOUR, TWENTY_TWO} from '../AppText';
 import {Button} from '../Button';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import NavigationService from '../../navigation/NavigationService';
 import {KYC_SCREEN, WITHDRAW_SCREEN} from '../../navigation/routes';
 import {NLCColor, NewColor, colors} from '../../theme/color';
+import { getKycDetails, getUserProfile } from '../../actions/profileAction';
 
 const ListingItem = ({title, info, button, border}) => {
+  const dispatch = useDispatch();
   const kycDetails = useSelector(state => {
     return state.profile.kycDetails;
   });
@@ -36,26 +38,26 @@ const ListingItem = ({title, info, button, border}) => {
         </AppText>
       </View>
       <View>
-        {/* {button && !isUserVerified && (
+        {button && !isUserVerified && (
           <Button
-            onPress={() => NavigationService.navigate(KYC_SCREEN)}
+          onPress={() => { NavigationService.navigate(KYC_SCREEN), dispatch(getKycDetails()), dispatch(getUserProfile(false, false)); }}
             style={{
               width: 140,
               height: 28,
               marginTop: 0,
-              bordercolor:"#DBA63D",borderwidth:1
+              // bordercolor:"#DBA63D",borderwidth:1/
               
             }}
-            backgroundColor="#DBA63D"
-            nogradient
+            backgroundColor="white"
+            // nogradient
             
             
             type={ELEVEN}
             weight={POPPINS}>
             Verify to Withdrawl
           </Button>
-        )} */}
-        {button /* && isUserVerified */ && (
+        )}
+        {button && isUserVerified && (
           <Button
             onPress={() => NavigationService.navigate(WITHDRAW_SCREEN)}
             style={{

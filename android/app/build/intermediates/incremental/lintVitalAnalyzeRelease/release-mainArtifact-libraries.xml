@@ -1,9 +1,9 @@
 <libraries>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-firebase_dynamic-links::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/dynamic-links/android/build/.transforms/42c8b6e6b357895247e2534911746083/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/dynamic-links/android/build/.transforms/42c8b6e6b357895247e2534911746083/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-firebase_dynamic-links::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/dynamic-links/android/build/.transforms/c9accc2e91e478c8fbfe7897618668d3/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/dynamic-links/android/build/.transforms/c9accc2e91e478c8fbfe7897618668d3/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-firebase_dynamic-links:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/dynamic-links/android/build/.transforms/42c8b6e6b357895247e2534911746083/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/dynamic-links/android/build/.transforms/c9accc2e91e478c8fbfe7897618668d3/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -13,10 +13,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-firebase_messaging::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/.transforms/f4fb04c898a34081be1853ac1baa2846/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/.transforms/f4fb04c898a34081be1853ac1baa2846/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-firebase_messaging::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/.transforms/db7eb0aadf54fbdc13c7eb571a279267/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/.transforms/db7eb0aadf54fbdc13c7eb571a279267/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-firebase_messaging:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/messaging/android/build/.transforms/f4fb04c898a34081be1853ac1baa2846/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/messaging/android/build/.transforms/db7eb0aadf54fbdc13c7eb571a279267/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -26,10 +26,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-firebase_app::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/.transforms/9384d4c46a936fcfdc2b4992b049f141/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/.transforms/9384d4c46a936fcfdc2b4992b049f141/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-firebase_app::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/.transforms/649550a4ee314d1048bd29c9147e5ed1/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/.transforms/649550a4ee314d1048bd29c9147e5ed1/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-firebase_app:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-firebase/app/android/build/.transforms/9384d4c46a936fcfdc2b4992b049f141/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-firebase/app/android/build/.transforms/649550a4ee314d1048bd29c9147e5ed1/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -39,10 +39,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-pager-view::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-pager-view/android/build/.transforms/0bda29a22bdd38230f23335cca86daba/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-pager-view/android/build/.transforms/0bda29a22bdd38230f23335cca86daba/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-pager-view::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-pager-view/android/build/.transforms/c02641831e054cf5dde6b118359d3af8/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-pager-view/android/build/.transforms/c02641831e054cf5dde6b118359d3af8/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-pager-view:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-pager-view/android/build/.transforms/0bda29a22bdd38230f23335cca86daba/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-pager-view/android/build/.transforms/c02641831e054cf5dde6b118359d3af8/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -78,10 +78,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-screens::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-screens/android/build/.transforms/a3184422094afa68d0f11cec261a657c/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-screens/android/build/.transforms/a3184422094afa68d0f11cec261a657c/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-screens::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-screens/android/build/.transforms/20d321b3338d1fd05632bc4466893635/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-screens/android/build/.transforms/20d321b3338d1fd05632bc4466893635/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-screens:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-screens/android/build/.transforms/a3184422094afa68d0f11cec261a657c/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-screens/android/build/.transforms/20d321b3338d1fd05632bc4466893635/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -579,10 +579,10 @@
       jars="/Users/purushottamrathore/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.21/67f57e154437cd9e6e9cf368394b95814836ff88/kotlin-stdlib-jdk8-1.8.21.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.21"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-push-notification::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-push-notification/android/build/.transforms/a2139f14bebfc6772b9932f40640bf71/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-push-notification/android/build/.transforms/a2139f14bebfc6772b9932f40640bf71/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-push-notification::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-push-notification/android/build/.transforms/e2dda603934bbf182b1375e9c44a4826/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-push-notification/android/build/.transforms/e2dda603934bbf182b1375e9c44a4826/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-push-notification:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-push-notification/android/build/.transforms/a2139f14bebfc6772b9932f40640bf71/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-push-notification/android/build/.transforms/e2dda603934bbf182b1375e9c44a4826/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -618,10 +618,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-async-storage_async-storage::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-async-storage/async-storage/android/build/.transforms/079cdf9143e087300623b265f3277958/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-async-storage/async-storage/android/build/.transforms/079cdf9143e087300623b265f3277958/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-async-storage_async-storage::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-async-storage/async-storage/android/build/.transforms/d8f8906359105d49b5e38e946368c189/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-async-storage/async-storage/android/build/.transforms/d8f8906359105d49b5e38e946368c189/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-async-storage_async-storage:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-async-storage/async-storage/android/build/.transforms/079cdf9143e087300623b265f3277958/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-async-storage/async-storage/android/build/.transforms/d8f8906359105d49b5e38e946368c189/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -631,10 +631,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-clipboard_clipboard::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-clipboard/clipboard/android/build/.transforms/047fc3440a6094f0706823d85a34f987/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-clipboard/clipboard/android/build/.transforms/047fc3440a6094f0706823d85a34f987/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-clipboard_clipboard::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-clipboard/clipboard/android/build/.transforms/e6921f23a1e426e36e76b9134b051688/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-clipboard/clipboard/android/build/.transforms/e6921f23a1e426e36e76b9134b051688/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-clipboard_clipboard:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-clipboard/clipboard/android/build/.transforms/047fc3440a6094f0706823d85a34f987/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-clipboard/clipboard/android/build/.transforms/e6921f23a1e426e36e76b9134b051688/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -644,10 +644,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-community_blur::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/blur/android/build/.transforms/95edb6cb6aec43b15c8f4c60898bf543/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/blur/android/build/.transforms/95edb6cb6aec43b15c8f4c60898bf543/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-community_blur::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/blur/android/build/.transforms/37ad43ec01227a8aa21e45306ff070ce/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/blur/android/build/.transforms/37ad43ec01227a8aa21e45306ff070ce/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-community_blur:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/blur/android/build/.transforms/95edb6cb6aec43b15c8f4c60898bf543/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/blur/android/build/.transforms/37ad43ec01227a8aa21e45306ff070ce/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -657,10 +657,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-community_datetimepicker::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/datetimepicker/android/build/.transforms/0fa827125e4a32a42655110b2dc3c76a/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/datetimepicker/android/build/.transforms/0fa827125e4a32a42655110b2dc3c76a/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-community_datetimepicker::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/datetimepicker/android/build/.transforms/cb51081d2d49180d8250fe0c1d3093a4/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/datetimepicker/android/build/.transforms/cb51081d2d49180d8250fe0c1d3093a4/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-community_datetimepicker:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/datetimepicker/android/build/.transforms/0fa827125e4a32a42655110b2dc3c76a/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/datetimepicker/android/build/.transforms/cb51081d2d49180d8250fe0c1d3093a4/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -670,10 +670,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-community_geolocation::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/geolocation/android/build/.transforms/ba021b33641eb12691b90da1a1d31024/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/geolocation/android/build/.transforms/ba021b33641eb12691b90da1a1d31024/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-community_geolocation::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/geolocation/android/build/.transforms/8d9e9450092143997cd85a535bd458a0/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/geolocation/android/build/.transforms/8d9e9450092143997cd85a535bd458a0/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-community_geolocation:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/geolocation/android/build/.transforms/ba021b33641eb12691b90da1a1d31024/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/geolocation/android/build/.transforms/8d9e9450092143997cd85a535bd458a0/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -683,10 +683,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-community_progress-bar-android::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/progress-bar-android/android/build/.transforms/ef3c119ad28333c6bcbafdbfad769df8/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/progress-bar-android/android/build/.transforms/ef3c119ad28333c6bcbafdbfad769df8/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-community_progress-bar-android::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/progress-bar-android/android/build/.transforms/5ff24ac4e23413c22fcf5c712ec52ec7/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/progress-bar-android/android/build/.transforms/5ff24ac4e23413c22fcf5c712ec52ec7/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-community_progress-bar-android:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-community/progress-bar-android/android/build/.transforms/ef3c119ad28333c6bcbafdbfad769df8/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-community/progress-bar-android/android/build/.transforms/5ff24ac4e23413c22fcf5c712ec52ec7/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -696,10 +696,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-google-signin_google-signin::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-google-signin/google-signin/android/build/.transforms/1c60a6e9dc012f858ccc1fb0dcb4c2c1/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-google-signin/google-signin/android/build/.transforms/1c60a6e9dc012f858ccc1fb0dcb4c2c1/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-google-signin_google-signin::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-google-signin/google-signin/android/build/.transforms/c3e3595d7d49d2ddf59af21db4aefd26/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-google-signin/google-signin/android/build/.transforms/c3e3595d7d49d2ddf59af21db4aefd26/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-google-signin_google-signin:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-google-signin/google-signin/android/build/.transforms/1c60a6e9dc012f858ccc1fb0dcb4c2c1/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-google-signin/google-signin/android/build/.transforms/c3e3595d7d49d2ddf59af21db4aefd26/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -709,10 +709,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-masked-view_masked-view::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-masked-view/masked-view/android/build/.transforms/41e500ee17323c7b4434ef0de5f450d6/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-masked-view/masked-view/android/build/.transforms/41e500ee17323c7b4434ef0de5f450d6/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-masked-view_masked-view::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-masked-view/masked-view/android/build/.transforms/f805a452248047cc891327ac30671e2f/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-masked-view/masked-view/android/build/.transforms/f805a452248047cc891327ac30671e2f/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-masked-view_masked-view:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/@react-native-masked-view/masked-view/android/build/.transforms/41e500ee17323c7b4434ef0de5f450d6/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/@react-native-masked-view/masked-view/android/build/.transforms/f805a452248047cc891327ac30671e2f/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -722,10 +722,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-device-info::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-device-info/android/build/.transforms/491f03d0b4d0e93469747f8f4253e961/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-device-info/android/build/.transforms/491f03d0b4d0e93469747f8f4253e961/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-device-info::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-device-info/android/build/.transforms/2bd55549754358669c1c14d9169ccb8b/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-device-info/android/build/.transforms/2bd55549754358669c1c14d9169ccb8b/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-device-info:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-device-info/android/build/.transforms/491f03d0b4d0e93469747f8f4253e961/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-device-info/android/build/.transforms/2bd55549754358669c1c14d9169ccb8b/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -735,10 +735,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-fast-image::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-fast-image/android/build/.transforms/dd61af30bd384ea371f87c930721c104/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-fast-image/android/build/.transforms/dd61af30bd384ea371f87c930721c104/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-fast-image::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-fast-image/android/build/.transforms/4843f3c274a642477e2fa454961f208a/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-fast-image/android/build/.transforms/4843f3c274a642477e2fa454961f208a/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-fast-image:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-fast-image/android/build/.transforms/dd61af30bd384ea371f87c930721c104/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-fast-image/android/build/.transforms/4843f3c274a642477e2fa454961f208a/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -748,10 +748,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-gesture-handler::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-gesture-handler/android/build/.transforms/d07b1569a802281f6ac259045a868d8f/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-gesture-handler/android/build/.transforms/d07b1569a802281f6ac259045a868d8f/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-gesture-handler::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-gesture-handler/android/build/.transforms/fd88821b5e1312f956c4dfa7cb4f2c3f/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-gesture-handler/android/build/.transforms/fd88821b5e1312f956c4dfa7cb4f2c3f/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-gesture-handler:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-gesture-handler/android/build/.transforms/d07b1569a802281f6ac259045a868d8f/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-gesture-handler/android/build/.transforms/fd88821b5e1312f956c4dfa7cb4f2c3f/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -761,10 +761,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-image-crop-picker::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/.transforms/02edf143ac6004f66817c1bcb11c93b9/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/.transforms/02edf143ac6004f66817c1bcb11c93b9/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-image-crop-picker::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/.transforms/bc6bc2f8c32b78e4376e771a83aa7572/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/.transforms/bc6bc2f8c32b78e4376e771a83aa7572/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-image-crop-picker:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-image-crop-picker/android/build/.transforms/02edf143ac6004f66817c1bcb11c93b9/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-image-crop-picker/android/build/.transforms/bc6bc2f8c32b78e4376e771a83aa7572/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -774,10 +774,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-linear-gradient::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-linear-gradient/android/build/.transforms/d6ee056762cf4fe75001b81023299594/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-linear-gradient/android/build/.transforms/d6ee056762cf4fe75001b81023299594/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-linear-gradient::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-linear-gradient/android/build/.transforms/0bcb1c9578f01ea1bc340799df9e5272/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-linear-gradient/android/build/.transforms/0bcb1c9578f01ea1bc340799df9e5272/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-linear-gradient:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-linear-gradient/android/build/.transforms/d6ee056762cf4fe75001b81023299594/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-linear-gradient/android/build/.transforms/0bcb1c9578f01ea1bc340799df9e5272/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -787,10 +787,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-permissions::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-permissions/android/build/.transforms/15913a1f3a8fb112a20a5ec690029649/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-permissions/android/build/.transforms/15913a1f3a8fb112a20a5ec690029649/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-permissions::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-permissions/android/build/.transforms/98b8b5e7efb6c719fde58ec0cd825f74/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-permissions/android/build/.transforms/98b8b5e7efb6c719fde58ec0cd825f74/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-permissions:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-permissions/android/build/.transforms/15913a1f3a8fb112a20a5ec690029649/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-permissions/android/build/.transforms/98b8b5e7efb6c719fde58ec0cd825f74/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -800,10 +800,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-reanimated::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-reanimated/android/build/.transforms/440530c7abbc61888e984b0628211688/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-reanimated/android/build/.transforms/440530c7abbc61888e984b0628211688/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-reanimated::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-reanimated/android/build/.transforms/c2b54bb0572e2428517106c0badf6da4/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-reanimated/android/build/.transforms/c2b54bb0572e2428517106c0badf6da4/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-reanimated:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-reanimated/android/build/.transforms/440530c7abbc61888e984b0628211688/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-reanimated/android/build/.transforms/c2b54bb0572e2428517106c0badf6da4/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -813,10 +813,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-safe-area-context::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-safe-area-context/android/build/.transforms/e55709857f28c4023d6314fb62b2effe/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-safe-area-context/android/build/.transforms/e55709857f28c4023d6314fb62b2effe/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-safe-area-context::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-safe-area-context/android/build/.transforms/e656e8a04205db42237accb481adab59/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-safe-area-context/android/build/.transforms/e656e8a04205db42237accb481adab59/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-safe-area-context:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-safe-area-context/android/build/.transforms/e55709857f28c4023d6314fb62b2effe/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-safe-area-context/android/build/.transforms/e656e8a04205db42237accb481adab59/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -826,10 +826,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-splash-screen::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-splash-screen/android/build/.transforms/45d701cb046badc56454a31252534960/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-splash-screen/android/build/.transforms/45d701cb046badc56454a31252534960/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-splash-screen::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-splash-screen/android/build/.transforms/36708263a89db3ee1a202e8745f898e5/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-splash-screen/android/build/.transforms/36708263a89db3ee1a202e8745f898e5/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-splash-screen:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-splash-screen/android/build/.transforms/45d701cb046badc56454a31252534960/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-splash-screen/android/build/.transforms/36708263a89db3ee1a202e8745f898e5/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -839,10 +839,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-svg::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-svg/android/build/.transforms/3020536c5dcdb479fe012333d25aaf2a/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-svg/android/build/.transforms/3020536c5dcdb479fe012333d25aaf2a/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-svg::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-svg/android/build/.transforms/6e29c58a73382a2bb91c16e19919fc3a/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-svg/android/build/.transforms/6e29c58a73382a2bb91c16e19919fc3a/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-svg:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-svg/android/build/.transforms/3020536c5dcdb479fe012333d25aaf2a/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-svg/android/build/.transforms/6e29c58a73382a2bb91c16e19919fc3a/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -852,10 +852,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-upi-payment::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-upi-payment/android/build/.transforms/54a070d5ecb24ad24569ff17dadd6d0b/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-upi-payment/android/build/.transforms/54a070d5ecb24ad24569ff17dadd6d0b/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-upi-payment::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-upi-payment/android/build/.transforms/8d979544726f2c077a5322066b5d3ff8/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-upi-payment/android/build/.transforms/8d979544726f2c077a5322066b5d3ff8/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-upi-payment:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-upi-payment/android/build/.transforms/54a070d5ecb24ad24569ff17dadd6d0b/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-upi-payment/android/build/.transforms/8d979544726f2c077a5322066b5d3ff8/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -865,10 +865,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/android@@:react-native-webview::release"
-      jars="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-webview/android/build/.transforms/478b9d3f9a1df805ed97f364280118c0/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-webview/android/build/.transforms/478b9d3f9a1df805ed97f364280118c0/transformed/out/jars/libs/R.jar"
+      name="/Users/purushottamrathore/AppinopWorkspace/over11/android@@:react-native-webview::release"
+      jars="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-webview/android/build/.transforms/f25d24bd3c1dfe6f96728382101c171c/transformed/out/jars/classes.jar:/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-webview/android/build/.transforms/f25d24bd3c1dfe6f96728382101c171c/transformed/out/jars/libs/R.jar"
       resolved="Over11:react-native-webview:unspecified"
-      folder="/Users/purushottamrathore/AppinopWorkspace/Fantasy/over11/node_modules/react-native-webview/android/build/.transforms/478b9d3f9a1df805ed97f364280118c0/transformed/out"
+      folder="/Users/purushottamrathore/AppinopWorkspace/over11/node_modules/react-native-webview/android/build/.transforms/f25d24bd3c1dfe6f96728382101c171c/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
